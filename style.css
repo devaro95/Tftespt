@@ -1,0 +1,266 @@
+#index{
+background: url(Images/TEAMFIGHT-TACTICS-ISLAND-LEAD.jpg) no-repeat center center fixed;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+}
+
+#inicio{
+	background: url(Images/fondo.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+@font-face{font-family:BeaufortLoL;src:url(https://s.lolstatic.com/awesomefonts/1.0.0/Fonts/BeaufortforLOL-Regular.eot?#iefix) format("embedded-opentype"),url(https://s.lolstatic.com/awesomefonts/1.0.0/Fonts/BeaufortforLOL-Regular.woff) format("woff"),url(https://s.lolstatic.com/awesomefonts/1.0.0/Fonts/BeaufortforLOL-Regular.ttf) format("truetype"),url(https://s.lolstatic.com/awesomefonts/1.0.0/Fonts/BeaufortforLOL-Regular.svg#svgFontName) format("svg")}
+
+#logo{
+	padding-top:3%;
+	display:block;
+	margin:auto;
+}
+
+#intro{
+	display:block;
+	margin:auto;
+	width: 15%;
+	transition: all .2s ease-in-out;
+}
+
+#intro:hover{
+	display:block;
+	margin:auto;
+	transform: scale(1.4);
+}
+
+#navbar{
+	background-color: #121212;
+	border-bottom: 2px solid #c9aa71;
+	font-family: BeaufortLoL,"Times New Roman";
+    font-size: 14px!important;
+    font-weight: 700;
+    height: 52px;
+    line-height: normal;
+    position: absolute;
+    text-align: left;
+    width: 100%;
+	z-index: 3000000;
+}
+#leftbar{
+	float:left;
+	height: 52px;
+	line-height: normal;
+	margin-right:20px;
+	margin-left: 5px;
+}
+
+.navbarlink{
+	border-bottom: 2px solid transparent;
+    color: #c9aa71;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 48px;
+    margin: 0 .85em;
+    overflow: hidden;
+    padding-top: 2px;
+    text-transform: uppercase;
+	transition: color 1s cubic-bezier(.06,.81,0,.98);
+	text-decoration:none;
+}
+
+.selected{
+	border-bottom: 2px solid transparent;
+    color: white;
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 48px;
+    margin: 0 .85em;
+    overflow: hidden;
+    padding-top: 2px;
+    text-transform: uppercase;
+	transition: color 1s cubic-bezier(.06,.81,0,.98);
+	text-decoration:none;
+	color: #f1e6d0;
+	border-bottom: 2px solid #f1e6d0; 
+}
+
+.navbarlink:hover{
+	color: #f1e6d0;
+	border-bottom: 2px solid #f1e6d0; 
+}
+
+body{
+	margin:0;
+	position: relative;
+	display: block;
+}
+
+#menu{
+	font-family: BeaufortLoL,"Times New Roman";
+	position: absolute;
+	min-width: 1152px;
+	width: 1152px;
+	height: 775px;
+	margin: auto;
+	margin-top: 6%;
+	left: 0;
+    right: 0;
+    top: 0;
+	bottom: 0;
+}
+#leftmenu{	
+	width: 70%;
+	height: 100%;
+	float:left;
+}
+#rightmenu{	
+	border: 2px solid #c9aa71;
+	background-color: rgb(18,18,18, 0.75); 
+	width: 29%;
+	height: 100%;
+	float:right;
+	border-radius: 10px 10px 10px 10px;
+}
+
+.title{
+	border-radius: 10px 10px 0px 0px;
+	width: 100%;
+	height: 50px;
+	border-bottom: 2px solid #c9aa71;
+	background-color: rgb(18,18,18); 
+}
+
+.nametitle{
+	font-size: 20px!important;
+	font-weight: 500;
+	color: #c9aa71;
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 10px;	
+}
+
+.nametitle:hover{
+	font-size: 20px!important;
+	font-weight: 700;
+	color: #c9aa71;
+	display: inline-block;
+	margin-top: 10px;
+	margin-left: 10px;	
+}
+
+#topleftmenu{
+	border: 2px solid #c9aa71;
+	background-color: rgb(18,18,18, 0.75); 
+	width: 100%;
+	height: 58%;
+	float:right;
+	border-radius: 10px 10px 10px 10px;
+}
+#botleftmenu{
+	margin-top:2.5%;
+	border: 2px solid #c9aa71;
+	background-color: rgb(18,18,18, 0.75); 
+	width: 100%;
+	height: 39%;
+	float:right;
+	border-radius: 10px 10px 10px 10px;
+}
+.content{
+	border-radius: 0px 0px 10px 10px;
+	width: 100%;
+	height: 399px;
+	border-bottom: 2px solid #c9aa71;
+}
+
+.fila{
+	width:100%;
+	height: 33%;
+	display: inline-block;
+}
+
+.fila2{
+
+	width:100%;
+	height: 40%;
+	display: inline-block;
+}
+
+.item{
+	float: left;
+	width:20%;
+	height: 100%;
+	font-family: BeaufortLoL,"Times New Roman";
+	color: #c9aa71;
+	font-size: 16px!important;
+	font-weight: 500;
+}
+
+div{
+    margin:0px; 
+}
+img {
+    width: auto;
+    height: auto;
+    width: auto\9; /* ie8 */
+}
+
+.tierlist{
+	height: 723px;
+}
+
+.tierchamp{
+	width:100%;
+	height: 103px;
+	display: inline-block;
+}
+
+.itemClass{
+	max-width:100%; 
+	min-height:63%;
+	margin: auto; 
+	margin-top:10px; 
+}
+.itemTitleClass{
+	width:100%; 
+	height:36%; 
+	text-align: center; 
+	margin-top:3px;
+}
+
+.champClass{
+	max-width:100%; 
+	min-height:63%;
+	margin: auto; 
+	margin-top:10px; 
+}
+.champTitleClass{
+	width:100%; 
+	height:36%; 
+	text-align: center; 
+	margin-top:3px;
+}
+
+.champTierClass{
+	width:20%; 
+	height:100%; 
+	float: left; 
+}
+.numberTierClass{
+	width:16%; 
+	height:100%; 
+	float: left;
+}
+.titleTierClass{
+	width:20%;
+	height:100%; 
+	float: left; 
+	color: #c9aa71; 
+	text-align: center; 
+	line-height: 200px; 
+	line-height: 96px; 
+	font-size:25px;"
+}
