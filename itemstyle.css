@@ -1,0 +1,64 @@
+.container{
+    width: 24.2%;
+    border:solid;
+    background: rgb(18,18,18, 0.75);
+    color: #c9aa71;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+.itemTitle{
+   margin: 10px; 
+   margin-bottom: 20px;
+}
+.itemImage{
+    width: 50px; 
+    height: 50px; 
+    float: left;
+    border:solid white 1px;
+}
+.subContainer{
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    height: 46px;
+    padding: 0px 8px 0px 24px;
+    transition: all 0.15s ease 0s;
+}
+.imageContainer{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.subItem{
+    width: 30px; 
+    height: 30px; 
+    border:solid white 1px;
+}
+.guion{
+    font-size: 14px;
+    line-height: 1.5;
+}
+.descItem{
+    font-size: 14px;
+    line-height: 1.5;
+    flex: 1 1 0%;
+    display: block;
+    margin-left: 5px;
+}
+#menuItem{
+    font-family: BeaufortLoL,"Times New Roman";
+	position: absolute;
+	min-width: 1152px;
+	width: 95%;
+	height: 775px;
+	margin: auto;
+	margin-top: 6%;
+	left: 0;
+    right: 0;
+    top: 0;
+	bottom: 0;
+}
