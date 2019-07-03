@@ -220,9 +220,11 @@ img {
 
 .itemClass{
 	max-width:100%; 
-	min-height:63%;
+	min-height:50%;
 	margin: auto; 
 	margin-top:10px; 
+	border:solid white 0.5px; 
+	width: 41%;
 }
 .itemTitleClass{
 	width:100%; 
@@ -263,4 +265,15 @@ img {
 	line-height: 200px; 
 	line-height: 96px; 
 	font-size:25px;"
+}
+#divDescItem{
+	position: absolute; 
+	top: 0px; 
+	left: 0px; 
+	width: 100%;
+}
+.algo{
+	position: absolute;
+	margin-top: 100px;
+	border: solid 1px white;
 }
