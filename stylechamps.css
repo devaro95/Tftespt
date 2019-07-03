@@ -1,0 +1,36 @@
+#campeones{
+    margin: auto;
+    margin-top: 6%;
+    margin-bottom: 4%;
+	left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    min-width: 1152px;
+    position: absolute;
+    width: 1152px;
+    border: solid #c9aa71;
+    border-radius: 10px 10px 10px 10px;
+    border-collapse: collapse;
+    
+}
+
+td{
+    border-bottom: 2px solid #c9aa71;   
+}
+
+tr{
+    height:54px;
+}
+
+tr:first-child{
+    background-color: #121212;
+}
+
+tr:nth-child(even){
+    background-color: rgb(18,18,18, 0.6);
+}
+
+tr:nth-child(odd):not(:first-child){
+    background-color: rgb(18,18,18, 0.4);
+}
