@@ -90,6 +90,7 @@
     visibility: hidden;
     width: 20%;
     z-index: 1;
+    right: -15;
 }
 .imgCaja{
     width: 50px; 
