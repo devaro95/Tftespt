@@ -6,17 +6,23 @@
     right: 0;
     top: 0;
     bottom: 0;
-    min-width: 1152px;
+    min-width: 960px;
     position: absolute;
-    width: 1152px;
+    width: 960px;
     border: solid #c9aa71;
     border-radius: 10px 10px 10px 10px;
     border-collapse: collapse;
-    
+    font-family: BeaufortLoL,"Times New Roman";
+    font-size: 14px!important;
+    font-weight: 700;
+    color: #c9aa71;
+    text-align: center;
+    vertical-align: middle;
 }
 
 td{
-    border-bottom: 2px solid #c9aa71;   
+    vertical-align:middle;
+        
 }
 
 tr{
@@ -25,12 +31,31 @@ tr{
 
 tr:first-child{
     background-color: #121212;
+    font-size:16px;
 }
 
 tr:nth-child(even){
-    background-color: rgb(18,18,18, 0.6);
+    background-color: rgb(18,18,18, 0.75);
 }
 
 tr:nth-child(odd):not(:first-child){
-    background-color: rgb(18,18,18, 0.4);
+    background-color: rgb(18,18,18, 0.5);
+}
+
+.champicon{
+    width:36px; 
+    border: 1px solid #c9aa71;
+    vertical-align: middle;
+}
+
+.oriclasicon{
+    width:28px; 
+    
+    vertical-align: middle;
+}
+
+.oroicon{
+    width:16px; 
+    
+    vertical-align: middle;
 }
