@@ -60,7 +60,7 @@
     margin-left: 5px;
 }
 #menuItem{
-    font-family: BeaufortLoL,"Times New Roman";
+    font-family: 'Merriweather', serif;
 	position: absolute;
 	min-width: 1152px;
 	width: 95%;
@@ -71,6 +71,7 @@
     right: 0;
     top: 0;
     bottom: 0;
+    
 }
 .navBarItem{
     width: 50px; 
