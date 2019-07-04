@@ -94,6 +94,12 @@
     height: 50px; 
     float: left;
 }
+.imgCajaMini{
+    width: 20px; 
+    height: 20px; 
+    display: inline-block;
+    margin-left: 5px;
+}
 #itemList{
     border-radius: 10px;
 }
