@@ -1,6 +1,7 @@
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="itemstyle.css">
+    <script src="javascript.js"></script>
     <meta charset="utf-8" />
 </head>
 
@@ -11,159 +12,1110 @@
                 <div id="leftbar"><img src="Images/iconolol.png" style="width:52px"></div>
             </a>
             <a class="navbarlink" href="inicio.html">INICIO</a>
-            <a class="navbarlink" href="#">CAMPEONES</a>
+            <a class="navbarlink" href="campeones.html">CAMPEONES</a>
             <a class="selected" href="items.html">OBJETOS</a>
             <a class="navbarlink" href="#">CLASES</a>
             <a class="navbarlink" href="#">ORIGENES</a>
             <a class="navbarlink" href="#">TIER LIST</a>
         </div>
         <div id="menuItem">
-            <div style="margin:auto">
-                <div style="border:solid;margin-bottom: 10px; width:80%;margin:auto; min-width: 80%">
-                    <div class="navBarItem"
-                        style="background: url('Images/Objetos/bfsword.png')no-repeat center; background-size: cover">
-                    </div>
-                    <div class="navBarItem"
-                        style="background: url('Images/Objetos/giantsbelt.png')no-repeat center;background-size: cover">
-                    </div>
-                    <div class="navBarItem"
-                        style="background: url('Images/Objetos/chainvest.png')no-repeat center;background-size: cover">
-                    </div>
-                    <div class="navBarItem"
-                        style="background: url('Images/Objetos/negatroncloak.png')no-repeat center;background-size: cover">
-                    </div>
-                    <div class="navBarItem"
-                        style="background: url('Images/Objetos/recurvebow.png')no-repeat center;background-size: cover">
-                    </div>
-                    <div class="navBarItem"
-                        style="background: url('Images/Objetos/needlesslylargerod.png')no-repeat center;background-size: cover">
-                    </div>
-                    <div class="navBarItem"
-                        style="background: url('Images/Objetos/tearofthegoddess.png')no-repeat center;background-size: cover">
-                    </div>
-                    <div class="navBarItem"
-                        style="background: url('Images/Objetos/spatula.png')no-repeat center;background-size: cover">
-                    </div>
-                    <div class="navBarItem"
+            <div id="itemList"
+                style="margin:auto; margin-bottom: 10px; background: rgb(18,18,18, 0.75); border:solid #c9aa71;text-align: center; width:80%">
+                <div>
+                    <div class="navBarItem" onmouseover="mostrarCaja(1)" onmouseout="ocultarCaja(1)"
                         style="background: url('Images/Objetos/infinityedge.png')no-repeat center;background-size: cover">
+                        <div id="caja1" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/infinityedge.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Filo infinito</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>El daño crítico se incrementa un 100%</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/bfsword.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/bfsword.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(2)" onmouseout="ocultarCaja(2)"
                         style="background: url('Images/Objetos/hextechgunblade.png')no-repeat center;background-size: cover">
+                        <div id="caja2" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/hextechgunblade.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Sable-pistola hextech</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Cura un 25% del daño inflingido</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/bfsword.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/needlesslylargerod.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(3)" onmouseout="ocultarCaja(3)"
                         style="background: url('Images/Objetos/guardianangel.png')no-repeat center;background-size: cover">
+                        <div id="caja3" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/guardianangel.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Ángel de la guarda</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Revives con 500 puntos de vida.</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/bfsword.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/chainvest.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(4)" onmouseout="ocultarCaja(4)"
                         style="background: url('Images/Objetos/spearofshojin.png')no-repeat center;background-size: cover">
+                        <div id="caja4" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/spearofshojin.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Shojin</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Tras realizar una habilidad, +15% el maná por ataque.</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/bfsword.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/tearofthegoddess.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(5)" onmouseout="ocultarCaja(5)"
                         style="background: url('Images/Objetos/swordofthedivine.png')no-repeat center;background-size: cover">
+                        <div id="caja5" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/swordofthedivine.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Espada de los dioses</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>5% cada segundo de obtener 100% de crítico.</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/bfsword.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/recurvebow.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(6)" onmouseout="ocultarCaja(6)"
                         style="background: url('Images/Objetos/youmuusghostblade.png')no-repeat center;background-size: cover">
+                        <div id="caja6" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/youmuusghostblade.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Filo Fantasmal de Youmuu</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Añade clase Asesino al campeón</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/spatula.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/bfsword.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(7)" onmouseout="ocultarCaja(7)"
                         style="background: url('Images/Objetos/yuumi.png')no-repeat center;background-size: cover">
+                        <div id="caja7" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/yuumi.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Yuumi</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Añade clase Hechicero al campeón</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/spatula.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/needlesslylargerod.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(8)" onmouseout="ocultarCaja(8)"
                         style="background: url('Images/Objetos/darkin.png')no-repeat center;background-size: cover">
+                        <div id="caja8" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/darkin.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Oscuro</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Añade clase Demonio al campeón</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/spatula.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/tearofthegoddess.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(9)" onmouseout="ocultarCaja(9)"
                         style="background: url('Images/Objetos/cursedblade.png')no-repeat center;background-size: cover">
+                        <div id="caja9" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/cursedblade.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Hoja de pupilo</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Probabilidad de bajar el rango enemigo con cada golpe</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/negatroncloak.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/recurvebow.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(10)" onmouseout="ocultarCaja(10)"
                         style="background: url('Images/Objetos/dragonsclaw.png')no-repeat center;background-size: cover">
+                        <div id="caja10" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/dragonsclaw.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Garra de Dragón</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>+83% de resistencia al daño mágico</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/negatroncloak.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/negatroncloak.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(11)" onmouseout="ocultarCaja(11)"
                         style="background: url('Images/Objetos/bloodthirster.png')no-repeat center;background-size: cover">
+                        <div id="caja11" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/bloodthirster.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Sanguinaria</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>+35% de robo de vida</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/bfsword.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/negatroncloak.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(12)" onmouseout="ocultarCaja(12)"
                         style="background: url('Images/Objetos/forceofnature.png')no-repeat center;background-size: cover">
+                        <div id="caja12" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/forceofnature.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Fuerza de la naturaleza</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Este campeón no cuenta para el recuento de unidades</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/spatula.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/spatula.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(13)" onmouseout="ocultarCaja(13)"
                         style="background: url('Images/Objetos/frozenheart.png')no-repeat center;background-size: cover">
+                        <div id="caja13" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/frozenheart.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Corazón de hielo</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>-20% la velocidad de ataque a enemigos adyacentes.</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/tearofthegoddess.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/chainvest.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(14)" onmouseout="ocultarCaja(14)"
                         style="background: url('Images/Objetos/guinsoosrageblade.png')no-repeat center;background-size: cover">
+                        <div id="caja14" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/guinsoosrageblade.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Hoja de furia de Guinsoo </b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>+5% de velocidad de ataque por cada golpe</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/recurvebow.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/needlesslylargerod.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <br>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(15)" onmouseout="ocultarCaja(15)"
                         style="background: url('Images/Objetos/hush.png')no-repeat center;background-size: cover">
+                        <div id="caja15" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/hush.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Quietud</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Alta probabilidad de silenciar</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/negatroncloak.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/tearofthegoddess.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(16)" onmouseout="ocultarCaja(16)"
                         style="background: url('Images/Objetos/ionicspark.png')no-repeat center;background-size: cover">
+                        <div id="caja16" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/ionicspark.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Chispa Iónica</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Cuando un enemigo realiza una habilidad, recibe daño</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/negatroncloak.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/needlesslylargerod.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(17)" onmouseout="ocultarCaja(17)"
                         style="background: url('Images/Objetos/knightsvow.png')no-repeat center;background-size: cover">
+                        <div id="caja17" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/knightsvow.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Promesa del caballero</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Añade clase Caballero</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/spatula.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/chainvest.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(18)" onmouseout="ocultarCaja(18)"
                         style="background: url('Images/Objetos/locketoftheironsolari.png')no-repeat center;background-size: cover">
+                        <div id="caja18" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/locketoftheironsolari.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Medallón de los Solari de Hierro</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Escudo de 200 puntos al inicio del combate</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/needlesslylargerod.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/chainvest.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(19)" onmouseout="ocultarCaja(19)"
                         style="background: url('Images/Objetos/ludensecho.png')no-repeat center;background-size: cover">
+                        <div id="caja19" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/ludensecho.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Eco de Luden</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>El daño por hechizo lo inflige en salpicadura</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/needlesslylargerod.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/tearofthegoddess.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(20)" onmouseout="ocultarCaja(20)"
                         style="background: url('Images/Objetos/morellonomicon.png')no-repeat center;background-size: cover">
+                        <div id="caja20" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/morellonomicon.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Morellonomicon</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Los hechizos infligen daño por quemaduras y previene curaciones.</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/needlesslylargerod.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/giantsbelt.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(21)" onmouseout="ocultarCaja(21)"
                         style="background: url('Images/Objetos/phantomdancer.png')no-repeat center;background-size: cover">
+                        <div id="caja21" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/phantomdancer.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Bailarín espectral</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Esquiva todos los críticos</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/recurvebow.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/chainvest.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(22)" onmouseout="ocultarCaja(22)"
                         style="background: url('Images/Objetos/rabadonsdeathcap.png')no-repeat center;background-size: cover">
+                        <div id="caja22" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/rabadonsdeathcap.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Sombrero mortal de Rabadon</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>+50% AP</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/needlesslylargerod.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/needlesslylargerod.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(23)" onmouseout="ocultarCaja(23)"
                         style="background: url('Images/Objetos/rapidfirecannon.png')no-repeat center;background-size: cover">
+                        <div id="caja23" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/rapidfirecannon.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Cañón de fuego rápido</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Dobla el rango de ataque y no puede fallar</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/recurvebow.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/recurvebow.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(24)" onmouseout="ocultarCaja(24)"
                         style="background: url('Images/Objetos/redbuff.png')no-repeat center;background-size: cover">
+                        <div id="caja24" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/redbuff.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Bufo rojo</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Daño por quemadura del 2,5% de la vida máxima. Las unidades quemadas no se pueden
+                                curar.
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/giantsbelt.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/chainvest.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(25)" onmouseout="ocultarCaja(25)"
                         style="background: url('Images/Objetos/redemption.png')no-repeat center;background-size: cover">
+                        <div id="caja25" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/redemption.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Redención</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Al morir, cura 1000 puntos de vida a los aliados.</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/giantsbelt.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/tearofthegoddess.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(26)" onmouseout="ocultarCaja(26)"
                         style="background: url('Images/Objetos/runaanshurricane.png')no-repeat center;background-size: cover">
+                        <div id="caja26" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/runaanshurricane.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Huracán de Runaan</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Ataca a dos objetivos extras con un 50% del daño</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/spatula.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/negatroncloak.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(27)" onmouseout="ocultarCaja(27)"
                         style="background: url('Images/Objetos/seraphsembrace.png')no-repeat center;background-size: cover">
+                        <div id="caja27" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/seraphsembrace.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Abrazo del serafín</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>+20 de maná después de cada hechizo</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/tearofthegoddess.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/tearofthegoddess.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(28)" onmouseout="ocultarCaja(28)"
                         style="background: url('Images/Objetos/statikkshiv.png')no-repeat center;background-size: cover">
+                        <div id="caja28" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/statikkshiv.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Puñal de Statikk</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Cada tercer ataque inflige 100 de daño mágico</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/recuento.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/tearofthegoddess.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(29)" onmouseout="ocultarCaja(29)"
                         style="background: url('Images/Objetos/swordbreaker.png')no-repeat center;background-size: cover">
+                        <div id="caja29" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/swordbreaker.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Rompeespadas</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>5% cada segundo de obtener 100% de crítico</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/recurvebow.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/bfsword.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(30)" onmouseout="ocultarCaja(30)"
                         style="background: url('Images/Objetos/thornmail.png')no-repeat center;background-size: cover">
+                        <div id="caja30" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/thornmail.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Malla de espinas</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Devuelve un 25% del daño recibido</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/chainvest.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/chainvest.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(31)" onmouseout="ocultarCaja(31)"
                         style="background: url('Images/Objetos/titanichydra.png')no-repeat center;background-size: cover">
+                        <div id="caja31" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/titanichydra.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Hidra titánica</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Daño adicional por salpicadura del 10% de la vida máxima.</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/recurvebow.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/giantsbelt.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(32)" onmouseout="ocultarCaja(32)"
                         style="background: url('Images/Objetos/warmogsarmor.png')no-repeat center;background-size: cover">
+                        <div id="caja32" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/warmogsarmor.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Armadura de Warmog</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Regenera un 5% de vida por segundo.</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/giantsbelt.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/giantsbelt.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(33)" onmouseout="ocultarCaja(33)"
                         style="background: url('Images/Objetos/zekesherald.png')no-repeat center;background-size: cover">
+                        <div id="caja33" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/zekesherald.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Heraldo de Zeke</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Los aliados de alrededor ganan un 10% de velocidad de ataque.</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/bfsword.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/giantsbelt.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(34)" onmouseout="ocultarCaja(34)"
                         style="background: url('Images/Objetos/zephyr.png')no-repeat center;background-size: cover">
+                        <div id="caja34" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/zephyr.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Céfiro</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Al inicio del combate levanta a un enemigo durante 5 segundos.</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/giantsbelt.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/negatroncloak.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(35)" onmouseout="ocultarCaja(35)"
                         style="background: url('Images/Objetos/bladeoftheruinedking.png')no-repeat center;background-size: cover">
+                        <div id="caja35" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/bladeoftheruinedking.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Hoja del Rey</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Añade clase Espadachín</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/spatula.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/recurvebow.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="navBarItem"
+                    <div class="navBarItem" onmouseover="mostrarCaja(36)" onmouseout="ocultarCaja(36)"
                         style="background: url('Images/Objetos/frozenmallet.png')no-repeat center;background-size: cover">
+                        <div id="caja36" class="caja">
+                            <div>
+                                <div class="imgCaja"
+                                    style="background: url('Images/Objetos/frozenmallet.png')no-repeat center;background-size: cover">
+                                    >
+                                </div>
+                                <div class="itemName">
+                                    <font size="5"><b>Mazo helado</b></font>
+                                </div>
+                            </div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>Añade clase Glacial.</div>
+                            <div style="width:100%;float:left">
+                                <hr>
+                            </div>
+                            <div>
+                                <div style="display: inline-block;">Se hace con:</div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/spatula.png')no-repeat center;background-size: cover">
+                                </div>
+                                <div class="imgCajaMini"
+                                    style="background: url('Images/Objetos/giantsbelt.png')no-repeat center;background-size: cover">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div>
+            <div style="text-align: center">
                 <!--Box 1-->
                 <div class="container">
                     <div class="itemTitle">
                         <div class="itemImage"
                             style="background: url('Images/Objetos/bfsword.png')no-repeat center; background-size: cover">
                         </div>
-                        <div>
-                            <b>Espadón </b> <br> +20 Daño de ataque
+                        <div class="descTitle">
+                            <b>Espadón</b> <br> +20 Daño de ataque
                         </div>
                     </div>
                     <div>
@@ -172,57 +1124,57 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/bfsword.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/infinityedge.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem"></div>
+                                <div class="descItem">El daño crítico se incrementa un 100%.</div>
                             </div>
                             <div class="subContainer">
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/needlesslylargerod.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/hextechgunblade.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Te cura un 25% por golpe.</div>
+                                <div class="descItem">Cura un 25% del daño infligido.</div>
                             </div>
                             <div class="subContainer">
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/chainvest.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/guardianangel.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Revive al campeón con 500HP</div>
+                                <div class="descItem">Revives con 500 puntos de vida.</div>
                             </div>
                             <div class="subContainer">
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/tearofthegoddess.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/spearofshojin.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Trás lanzarse, ganas un 15% de mana por ataque.</div>
+                                <div class="descItem">Tras realizar una habilidad, +15% el maná por ataque.</div>
                             </div>
                             <div class="subContainer">
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/recurvebow.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/swordofthedivine.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Cada 1s, 5% de probabilidad de ganar 100% critico.</div>
+                                <div class="descItem">5% cada segundo de obtener 100% de crítico</div>
                             </div>
                             <div class="subContainer">
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/spatula.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/youmuusghostblade.png')no-repeat center; background-size: cover">
                                 </div>
@@ -232,7 +1184,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/negatroncloak.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/bloodthirster.png')no-repeat center; background-size: cover">
                                 </div>
@@ -242,11 +1194,12 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/giantsbelt.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/zekesherald.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Los aliados adyacentes ganan +10% Velocidad de Ataque.</div>
+                                <div class="descItem">Los aliados de alrededor ganan un 10% de velocidad de ataque.
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -258,8 +1211,8 @@
                         <div class="itemImage"
                             style="background: url('Images/Objetos/giantsbelt.png')no-repeat center;background-size: cover">
                         </div>
-                        <div>
-                            <b>Cinturon de gigante</b> <br> +200 HP
+                        <div class="descTitle">
+                            <b>Cinturon de gigante</b> <br> =200 HP
                         </div>
                     </div>
                     <div>
@@ -268,81 +1221,85 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/bfsword.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/zekesherald.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Te cura un 25% por golpe.</div>
+                                <div class="descItem">Los aliados de alrededor ganan un 10% de velocidad de ataque.
+                                </div>
                             </div>
                             <div class="subContainer">
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/needlesslylargerod.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/morellonomicon.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Te cura un 25% por golpe.</div>
+                                <div class="descItem">Los hechizos infligen daño por quemaduras y previene curaciones.
+                                </div>
                             </div>
                             <div class="subContainer">
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/chainvest.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/redbuff.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Revive al campeón con 500HP</div>
+                                <div class="descItem">Daño por quemadura del 2,5% de la vida máxima. Las unidades
+                                    quemadas no se pueden curar.</div>
                             </div>
                             <div class="subContainer">
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/tearofthegoddess.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/redemption.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Trás lanzarse, ganas un 15% de mana por ataque.</div>
+                                <div class="descItem">Al morir, cura 1000 puntos de vida a los aliados.</div>
                             </div>
                             <div class="subContainer">
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/recurvebow.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/titanichydra.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Cada 1s, 5% de probabilidad de ganar 100% critico.</div>
+                                <div class="descItem">Daño adicional por salpicadura del 10% de la vida máxima.</div>
                             </div>
                             <div class="subContainer">
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/spatula.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/frozenmallet.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">El portador es tambien un Asesino.</div>
+                                <div class="descItem">Añade clase Glacial.</div>
                             </div>
                             <div class="subContainer">
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/negatroncloak.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/zephyr.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Los ataques curan un 50% del daño.</div>
+                                <div class="descItem">Al inicio del combate levanta a un enemigo durante 5 segundos.
+                                </div>
                             </div>
                             <div class="subContainer">
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/giantsbelt.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/warmogsarmor.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Los aliados adyacentes ganan +10% Velocidad de Ataque.</div>
+                                <div class="descItem">Regenera un 5% de vida por segundo.</div>
                             </div>
                         </div>
                     </div>
@@ -354,8 +1311,8 @@
                         <div class="itemImage"
                             style="background: url('Images/Objetos/chainvest.png')no-repeat center;background-size: cover">
                         </div>
-                        <div>
-                            <b>B.F. Sword +20</b> <br> Attack Damage
+                        <div class="descTitle">
+                            <b>B.F. Sword =20</b> <br> Attack Damage
                         </div>
                     </div>
                     <div>
@@ -364,17 +1321,17 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/bfsword.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/guardianangel.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Te cura un 25% por golpe.</div>
+                                <div class="descItem">Revives con 500 puntos de vida.</div>
                             </div>
                             <div class="subContainer">
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/needlesslylargerod.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/locketoftheironsolari.png')no-repeat center; background-size: cover">
                                 </div>
@@ -384,7 +1341,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/chainvest.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/thornmail.png')no-repeat center; background-size: cover">
                                 </div>
@@ -394,17 +1351,17 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/tearofthegoddess.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/frozenheart.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Trás lanzarse, ganas un 15% de mana por ataque.</div>
+                                <div class="descItem">-20% la velocidad de ataque a enemigos adyacentes.</div>
                             </div>
                             <div class="subContainer">
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/recurvebow.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/phantomdancer.png')no-repeat center; background-size: cover">
                                 </div>
@@ -414,7 +1371,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/spatula.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/knightsvow.png')no-repeat center; background-size: cover">
                                 </div>
@@ -424,7 +1381,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/negatroncloak.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/swordbreaker.png')no-repeat center; background-size: cover">
                                 </div>
@@ -434,11 +1391,12 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/giantsbelt.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/redbuff.png')no-repeat center; ">
                                 </div>
-                                <div class="descItem">Los aliados adyacentes ganan +10% Velocidad de Ataque.</div>
+                                <div class="descItem">Daño por quemadura del 2,5% de la vida máxima. Las unidades
+                                    quemadas no se pueden curar.</div>
                             </div>
                         </div>
                     </div>
@@ -450,8 +1408,8 @@
                         <div class="itemImage"
                             style="background: url('Images/Objetos/negatroncloak.png')no-repeat center;background-size: cover">
                         </div>
-                        <div>
-                            <b>B.F. Sword +20</b> <br> Attack Damage
+                        <div class="descTitle">
+                            <b>B.F. Sword =20</b> <br> Attack Damage
                         </div>
                     </div>
                     <div>
@@ -460,7 +1418,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/bfsword.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/bloodthirster.png')no-repeat center; background-size: cover">
                                 </div>
@@ -470,7 +1428,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/needlesslylargerod.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/ionicspark.png')no-repeat center; background-size: cover">
                                 </div>
@@ -480,7 +1438,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/chainvest.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/swordbreaker.png')no-repeat center; background-size: cover">
                                 </div>
@@ -490,17 +1448,17 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/tearofthegoddess.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/hush.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Trás lanzarse, ganas un 15% de mana por ataque.</div>
+                                <div class="descItem">Trás lanzarse, +15% de mana por ataque.</div>
                             </div>
                             <div class="subContainer">
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/recurvebow.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/cursedblade.png')no-repeat center; background-size: cover">
                                 </div>
@@ -510,7 +1468,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/spatula.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/runaanshurricane.png')no-repeat center; background-size: cover">
                                 </div>
@@ -520,7 +1478,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/negatroncloak.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/dragonsclaw.png')no-repeat center; background-size: cover">
                                 </div>
@@ -530,11 +1488,12 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/giantsbelt.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/zephyr.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Los aliados adyacentes ganan +10% Velocidad de Ataque.</div>
+                                <div class="descItem">Al inicio del combate levanta a un enemigo durante 5 segundos.
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -546,8 +1505,8 @@
                         <div class="itemImage"
                             style="background: url('Images/Objetos/recurvebow.png')no-repeat center;background-size: cover">
                         </div>
-                        <div>
-                            <b>B.F. Sword +20</b> <br> Attack Damage
+                        <div class="descTitle">
+                            <b>B.F. Sword =20</b> <br> Attack Damage
                         </div>
                     </div>
                     <div>
@@ -556,7 +1515,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/bfsword.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/swordofthedivine.png')no-repeat center; background-size: cover">
                                 </div>
@@ -566,7 +1525,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/needlesslylargerod.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/guinsoosrageblade.png')no-repeat center; background-size: cover">
                                 </div>
@@ -576,7 +1535,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/chainvest.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/phantomdancer.png')no-repeat center; background-size: cover">
                                 </div>
@@ -586,17 +1545,17 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/tearofthegoddess.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/statikkshiv.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Trás lanzarse, ganas un 15% de mana por ataque.</div>
+                                <div class="descItem">Trás lanzarse, +15% de mana por ataque.</div>
                             </div>
                             <div class="subContainer">
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/recurvebow.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/rapidfirecannon.png')no-repeat center; background-size: cover">
                                 </div>
@@ -606,7 +1565,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/spatula.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/bladeoftheruinedking.png')no-repeat center; background-size: cover">
                                 </div>
@@ -616,7 +1575,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/negatroncloak.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/cursedblade.png')no-repeat center; background-size: cover">
                                 </div>
@@ -626,11 +1585,11 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/giantsbelt.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/titanichydra.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Los aliados adyacentes ganan +10% Velocidad de Ataque.</div>
+                                <div class="descItem">Daño adicional por salpicadura del 10% de la vida máxima.</div>
                             </div>
                         </div>
                     </div>
@@ -642,8 +1601,8 @@
                         <div class="itemImage"
                             style="background: url('Images/Objetos/needlesslylargerod.png')no-repeat center; background-size: cover">
                         </div>
-                        <div>
-                            <b>B.F. Sword +20</b> <br> Attack Damage
+                        <div class="descTitle">
+                            <b>B.F. Sword =20</b> <br> Attack Damage
                         </div>
                     </div>
                     <div>
@@ -652,17 +1611,17 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/bfsword.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/hextechgunblade.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Te cura un 25% por golpe.</div>
+                                <div class="descItem">Cura un 25% del daño infligido.</div>
                             </div>
                             <div class="subContainer">
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/needlesslylargerod.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/rabadonsdeathcap.png')no-repeat center; background-size: cover">
                                 </div>
@@ -672,7 +1631,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/chainvest.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/locketoftheironsolari.png')no-repeat center; background-size: cover">
                                 </div>
@@ -682,17 +1641,17 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/tearofthegoddess.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/ludensecho.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Trás lanzarse, ganas un 15% de mana por ataque.</div>
+                                <div class="descItem">Trás lanzarse, +15% de mana por ataque.</div>
                             </div>
                             <div class="subContainer">
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/recurvebow.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/guinsoosrageblade.png')no-repeat center; background-size: cover">
                                 </div>
@@ -702,7 +1661,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/spatula.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/yuumi.png')no-repeat center; background-size: cover">
                                 </div>
@@ -712,7 +1671,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/negatroncloak.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/ionicspark.png')no-repeat center; background-size: cover">
                                 </div>
@@ -722,11 +1681,12 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/giantsbelt.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/morellonomicon.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Los aliados adyacentes ganan +10% Velocidad de Ataque.</div>
+                                <div class="descItem">Los hechizos infligen daño por quemaduras y previene curaciones
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -738,8 +1698,8 @@
                         <div class="itemImage"
                             style="background: url('Images/Objetos/tearofthegoddess.png')no-repeat center; background-size: cover">
                         </div>
-                        <div>
-                            <b>B.F. Sword +20</b> <br> Attack Damage
+                        <div class="descTitle">
+                            <b>B.F. Sword =20</b> <br> Attack Damage
                         </div>
                     </div>
                     <div>
@@ -748,17 +1708,17 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/bfsword.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/spearofshojin.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Te cura un 25% por golpe.</div>
+                                <div class="descItem">Tras realizar una habilidad, +15% el maná por ataque.</div>
                             </div>
                             <div class="subContainer">
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/needlesslylargerod.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/ludensecho.png')no-repeat center; background-size: cover">
                                 </div>
@@ -768,27 +1728,27 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/chainvest.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/frozenheart.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Revive al campeón con 500HP</div>
+                                <div class="descItem">-20% la velocidad de ataque a enemigos adyacentes.</div>
                             </div>
                             <div class="subContainer">
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/tearofthegoddess.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/seraphsembrace.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Trás lanzarse, ganas un 15% de mana por ataque.</div>
+                                <div class="descItem">Trás lanzarse, +15% de mana por ataque.</div>
                             </div>
                             <div class="subContainer">
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/recurvebow.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/statikkshiv.png')no-repeat center; background-size: cover">
                                 </div>
@@ -798,7 +1758,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/spatula.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/darkin.png')no-repeat center; background-size: cover">
                                 </div>
@@ -808,7 +1768,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/negatroncloak.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/hush.png')no-repeat center; background-size: cover">
                                 </div>
@@ -818,11 +1778,11 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/giantsbelt.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/redemption.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Los aliados adyacentes ganan +10% Velocidad de Ataque.</div>
+                                <div class="descItem">Al morir, cura 1000 puntos de vida a los aliados.</div>
                             </div>
                         </div>
                     </div>
@@ -833,8 +1793,8 @@
                     <div class="itemTitle">
                         <div class="itemImage" style="background: url('Images/Objetos/spatula.png')no-repeat center;">
                         </div>
-                        <div>
-                            <b>B.F. Sword +20</b> <br> Attack Damage
+                        <div class="descTitle">
+                            <b>B.F. Sword =20</b> <br> Attack Damage
                         </div>
                     </div>
                     <div>
@@ -843,7 +1803,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/bfsword.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/youmuusghostblade.png')no-repeat center; background-size: cover">
                                 </div>
@@ -853,7 +1813,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/needlesslylargerod.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/yuumi.png')no-repeat center; background-size: cover">
                                 </div>
@@ -863,7 +1823,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/chainvest.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/knightsvow.png')no-repeat center; background-size: cover">
                                 </div>
@@ -873,17 +1833,17 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/tearofthegoddess.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/darkin.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Trás lanzarse, ganas un 15% de mana por ataque.</div>
+                                <div class="descItem">Trás lanzarse, +15% de mana por ataque.</div>
                             </div>
                             <div class="subContainer">
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/recurvebow.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/bladeoftheruinedking.png')no-repeat center; background-size: cover">
                                 </div>
@@ -893,7 +1853,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/spatula.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/forceofnature.png')no-repeat center; background-size: cover">
                                 </div>
@@ -903,7 +1863,7 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/negatroncloak.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/runaanshurricane.png')no-repeat center; background-size: cover">
                                 </div>
@@ -913,11 +1873,11 @@
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/giantsbelt.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="guion">+</div>
+                                <div class="guion">=</div>
                                 <div class="subItem"
                                     style="background: url('Images/Objetos/frozenmallet.png')no-repeat center; background-size: cover">
                                 </div>
-                                <div class="descItem">Los aliados adyacentes ganan +10% Velocidad de Ataque.</div>
+                                <div class="descItem">Añade clase Glacial.</div>
                             </div>
                         </div>
                     </div>

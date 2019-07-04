@@ -1,21 +1,30 @@
 .container{
-    width: 24.2%;
+    width: 23%;
     border:solid;
     background: rgb(18,18,18, 0.75);
     color: #c9aa71;
     display: inline-block;
     margin-bottom: 5px;
     margin-left: 5px;
+    border-radius: 10px;
+    min-width: 430px;
+}
+.descTitle{
+    padding-top:10px;
 }
 .itemTitle{
-   margin: 10px; 
-   margin-bottom: 20px;
+    height: 8%;
+    background-color: rgb(18,18,18); 
+    border-bottom: 2px solid #c9aa71;
+    border-radius: 10px 10px 0 0;
 }
 .itemImage{
     width: 50px; 
     height: 50px; 
     float: left;
-    border:solid white 1px;
+    border:solid #ffffff 1px;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 .subContainer{
     box-sizing: border-box;
@@ -36,11 +45,12 @@
 .subItem{
     width: 30px; 
     height: 30px; 
-    border:solid white 1px;
+    border:solid #ffffff 1px;
 }
 .guion{
     font-size: 14px;
     line-height: 1.5;
+    width: 6%;
 }
 .descItem{
     font-size: 14px;
@@ -60,12 +70,40 @@
 	left: 0;
     right: 0;
     top: 0;
-	bottom: 0;
+    bottom: 0;
 }
 .navBarItem{
     width: 50px; 
     height: 50px; 
     display: inline-block;
-    border:solid white 1px;
-    margin-right: 10px;
+    border:solid #ffffff 1px;
+    margin: 5;
+}
+.caja{
+    position: absolute;
+	margin-top: 53px;
+    border: solid 1px #ffffff;
+    color: #c9aa71;
+    background:rgb(18,18,18);
+    padding: 10px;
+    visibility: hidden;
+    width: 20%;
+    z-index: 1;
+}
+.imgCaja{
+    width: 50px; 
+    height: 50px; 
+    float: left;
+}
+.imgCajaMini{
+    width: 20px; 
+    height: 20px; 
+    display: inline-block;
+    margin-left: 5px;
+}
+#itemList{
+    border-radius: 10px;
+}
+.itemName{
+    padding-top: 5px;
 }
