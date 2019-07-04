@@ -56,6 +56,22 @@ background-size: cover;
 	margin-left: 5px;
 }
 
+#rightbar{
+	float:right;
+	height: 52px;
+	line-height: normal;
+	margin-right:12px;
+	margin-left: 5px;
+}
+
+#midbar{
+	float:left;
+	height: 52px;
+	line-height: normal;
+	margin-right:12px;
+	margin-left: 5px;
+}
+
 .navbarlink{
 	border-bottom: 2px solid transparent;
     color: #c9aa71;
