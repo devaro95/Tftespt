@@ -62,7 +62,6 @@
 #menuItem{
     font-family: 'Merriweather', serif;
 	position: absolute;
-	min-width: 1152px;
 	width: 95%;
 	height: 775px;
 	margin: auto;
@@ -90,7 +89,6 @@
     visibility: hidden;
     width: 20%;
     z-index: 1;
-    right: -15;
 }
 .imgCaja{
     width: 50px; 
