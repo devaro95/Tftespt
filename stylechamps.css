@@ -29,7 +29,7 @@ tr{
     height:54px;
 }
 
-tr:first-child{
+thead:first-child{
     background-color: #121212;
     font-size:16px;
 }
@@ -38,7 +38,7 @@ tr:nth-child(even){
     background-color: rgb(18,18,18, 0.75);
 }
 
-tr:nth-child(odd):not(:first-child){
+tr:nth-child(odd){
     background-color: rgb(18,18,18, 0.5);
 }
 
@@ -46,6 +46,10 @@ tr:nth-child(odd):not(:first-child){
     width:36px; 
     border: 1px solid #c9aa71;
     vertical-align: middle;
+}
+
+.leftside{
+   text-align:justify;
 }
 
 .oriclasicon{
@@ -59,3 +63,31 @@ tr:nth-child(odd):not(:first-child){
     
     vertical-align: middle;
 }
+
+.hidetext{
+    /* Hide the text. */
+    color: transparent;
+    font-size:0px;
+}
+
+.asc:after {
+    content: ' ↑';
+    color: #c9aa71;
+  }
+  
+.desc:after {
+    content: " ↓";
+    color: #c9aa71;
+  }
+
+  .sorting {
+    background-color: #D4D4D4;
+  }
+
+  table tr th {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }

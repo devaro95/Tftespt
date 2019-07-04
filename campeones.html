@@ -6,13 +6,16 @@
     <link rel="shortcut icon" href="/Campeones/img-navi-tft-513c71b5.svg" />
     <link rel="shortcut icon" href="Images/espanita.ico" />
     <title>Campeones - TFTEsp</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.tablesorter.js"></script>
+    <script src="champsjavascript.js"></script>
 </head>
 
 <body id="inicio">
     <div style="display: block;">
         <div id="navbar">
             <a href="index.html">
-                <div id="leftbar"><img src="Images/iconolol.png" style="width:52px"></div>
+                <div id="leftbar"><img src="Images/newlogo.png" style="width:110px"></div>
             </a>
             <a class="navbarlink" href="inicio.html">INICIO</a>
             <a class="selected" href="campeones.html">CAMPEONES</a>
@@ -22,22 +25,25 @@
             <a class="navbarlink" href="#">TIER LIST</a>
         </div>
         <table id="campeones">
+            <thead>
             <tr>
-                <td style="width:10%">Tier</td>
-                <td style="width:18%">Nombre campeón</td>
-                <td style="width:10%">Clase/Origen</td>
-                <td style="width:10%">Coste</td>
-                <td style="width:7%">Vida</td>
-                <td style="width:7%">Armadura</td>
-                <td style="width:7%">MR</td>
-                <td style="width:7%">Vida</td>
-                <td style="width:7%">Daño</td>
-                <td style="width:7%">Vel. Atq.</td>
-                <td style="width:9%">Rango</td>
+                <th style="width:10%">Tier</td>
+                <th style="width:18%;">Nombre campeón</td>
+                <th style="width:10%">Clase/Origen</td>
+                <th style="width:10%">Coste</td>
+                <th style="width:7%">Vida</td>
+                <th style="width:7%">Armadura</td>
+                <th style="width:7%">MR</td>
+                <th style="width:7%">Vida</td>
+                <th style="width:7%">Daño</td>
+                <th style="width:7%">Vel. Atq.</td>
+                <th style="width:9%">Rango</td>
             </tr>
+            </thead>
+            <tbody>
             <tr>
-                <td><img src="Images/icon-champtier-1.png"></img></td>
-                <td><img src="Images/Campeones/AurelionSol.png" class="champicon">  Aurelion Sol</img></td>
+                <td><img src="Images/icon-champtier-1.png"></img><span class="hidetext">1</span></td>
+                <td class="leftside"><img src="Images/Campeones/AurelionSol.png" class="champicon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aurelion Sol</img></td>
                 <td><img src="Images/Clases y origenes/Sorcerer-1.png" class="oriclasicon" title="Hechizero"/>
                     <img src="Images/Clases y origenes/Dragon-2.png" class="oriclasicon" title="Dragon"/>
                     <!--<svg style="fill: rgb(32, 153, 93); width:16px;" id="hextech-stat-armor" viewBox="0 0 32 32"><title>stat-armor</title><path d="M1.333 1.333h29.333v17.255c-2.716 5.752-7.605 9.778-14.667 12.078-7.062-2.301-11.951-6.327-14.667-12.078v-17.255zM4.784 4.784v12.996c2.204 4.222 5.888 7.284 11.216 9.236 5.328-1.952 9.012-5.014 11.216-9.236v-12.996h-22.431zM8.235 8.235h15.529v8.627c-1.255 2.301-5.176 5.359-7.765 6.51-2.588-1.15-6.51-4.209-7.765-6.51v-8.627z"></path></svg>-->
@@ -49,7 +55,228 @@
                 <td>24</td>
                 <td>40</td>
                 <td>0.6</td>
-                <td style="font-size: 25px"><b style="color:white">|||</b>||</td>
+                <td style="font-size: 25px"><b style="color:white">|||</b>||<span class="hidetext">3</span></td>
+            </tr>
+            <tr>
+                <td><img src="Images/icon-champtier-1.png"></img><span class="hidetext">1</span></td>
+                <td class="leftside"><img src="Images/Campeones/Chogath.png" class="champicon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cho'gath</img></td>
+                <td><img src="Images/Clases y origenes/Brawler.png" class="oriclasicon" title="Luchador"/>
+                    <img src="Images/Clases y origenes/Void.png" class="oriclasicon" title="Vacio"/>
+                </td>
+                <td><img src="Images/oro.png" class="oroicon">4</img></td>
+                <td>1100</td>
+                <td>20</td>
+                <td>20</td>
+                <td>39</td>
+                <td>70</td>
+                <td>0.55</td>
+                <td style="font-size: 25px"><b style="color:white">|</b>||||<span class="hidetext">1</span></td>
+            </tr>
+            <tr>
+                <td><img src="Images/icon-champtier-1.png"></img><span class="hidetext">1</span></td>
+                <td class="leftside"><img src="Images/Campeones/Draven.png" class="champicon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Draven</img></td>
+                <td><img src="Images/Clases y origenes/Blademaster.png" class="oriclasicon" title="Espadachin"/>
+                    <img src="Images/Clases y origenes/Imperial-1.png" class="oriclasicon" title="Imperial"/>
+                </td>
+                <td><img src="Images/oro.png" class="oroicon">4</img></td>
+                <td>700</td>
+                <td>25</td>
+                <td>20</td>
+                <td>75</td>
+                <td>75</td>
+                <td>0.65</td>
+                <td style="font-size: 25px"><b style="color:white">|||</b>||<span class="hidetext">3</span></td>
+            </tr>
+            <tr>
+                <td><img src="Images/icon-champtier-1.png"></img><span class="hidetext">1</span></td>
+                <td class="leftside"><img src="Images/Campeones/Gnar.png" class="champicon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gnar</img></td>
+                <td><img src="Images/Clases y origenes/Shapeshifter-1.png" class="oriclasicon" title="Cambiaformas"/>
+                    <img src="Images/Clases y origenes/Wild.png" class="oriclasicon" title="Salvaje"/>
+                    <img src="Images/Clases y origenes/Yordle.png" class="oriclasicon" title="Yordle"/>
+                </td>
+                <td><img src="Images/oro.png" class="oroicon">4</img></td>
+                <td>850</td>
+                <td>35</td>
+                <td>20</td>
+                <td>31</td>
+                <td>45</td>
+                <td>0.7</td>
+                <td style="font-size: 25px"><b style="color:white">||</b>|||<span class="hidetext">2</span></td>
+            </tr>
+            <tr>
+                <td><img src="Images/icon-champtier-1.png"></img><span class="hidetext">1</span></td>
+                <td class="leftside"><img src="Images/Campeones/Sejuani.png" class="champicon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sejuani</img></td>
+                <td><img src="Images/Clases y origenes/Knight-2.png" class="oriclasicon" title="Caballero"/>
+                    <img src="Images/Clases y origenes/Glacial.png" class="oriclasicon" title="Glacial"/>
+                </td>
+                <td><img src="Images/oro.png" class="oroicon">4</img></td>
+                <td>850</td>
+                <td>35</td>
+                <td>25</td>
+                <td>25</td>
+                <td>45</td>
+                <td>0.55</td>
+                <td style="font-size: 25px"><b style="color:white">|</b>||||<span class="hidetext">1</span></td>
+            </tr>
+            <tr>
+                <td><img src="Images/icon-champtier-1.png"></img><span class="hidetext">1</span></td>
+                <td class="leftside"><img src="Images/Campeones/Swain.png" class="champicon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Swain</img></td>
+                <td><img src="Images/Clases y origenes/Shapeshifter-1.png" class="oriclasicon" title="Cambiaformas"/>
+                    <img src="Images/Clases y origenes/Imperial-1.png" class="oriclasicon" title="Imperial"/>
+                    <img src="Images/Clases y origenes/Demon-2.png" class="oriclasicon" title="Demonio"/>
+                </td>
+                <td><img src="Images/oro.png" class="oroicon">5</img></td>
+                <td>850</td>
+                <td>25</td>
+                <td>20</td>
+                <td>42</td>
+                <td>65</td>
+                <td>0.65</td>
+                <td style="font-size: 25px"><b style="color:white">||</b>|||<span class="hidetext">2</span></td>
+            </tr>
+            <tr>
+                <td><img src="Images/icon-champtier-2.png"></img><span class="hidetext">2</span></td>
+                <td class="leftside"><img src="Images/Campeones/Akali.png" class="champicon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Akali</img></td>
+                <td>
+                    <img src="Images/Clases y origenes/Assassin.png" class="oriclasicon" title="Asesino"/>
+                    <img src="Images/Clases y origenes/Ninja.png" class="oriclasicon" title="Ninja"/>
+                </td>
+                <td><img src="Images/oro.png" class="oroicon">4</img></td>
+                <td>700</td>
+                <td>20</td>
+                <td>20</td>
+                <td>53</td>
+                <td>70</td>
+                <td>0.75</td>
+                <td style="font-size: 25px"><b style="color:white">|||</b>||<span class="hidetext">3</span></td>
+            </tr>
+            <tr>
+                <td><img src="Images/icon-champtier-2.png"></img><span class="hidetext">2</span></td>
+                <td class="leftside"><img src="Images/Campeones/Anivia.png" class="champicon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Anivia</img></td>
+                <td>
+                    <img src="Images/Clases y origenes/Elementalist.png" class="oriclasicon" title="Elementalista"/>
+                    <img src="Images/Clases y origenes/Glacial.png" class="oriclasicon" title="Glacial"/>
+                </td>
+                <td><img src="Images/oro.png" class="oroicon">5</img></td>
+                <td>650</td>
+                <td>20</td>
+                <td>20</td>
+                <td>24</td>
+                <td>40</td>
+                <td>0.6</td>
+                <td style="font-size: 25px"><b style="color:white">||||</b>|<span class="hidetext">4</span></td>
+            </tr>
+            <tr>
+                <td><img src="Images/icon-champtier-2.png"></img><span class="hidetext">2</span></td>
+                <td class="leftside"><img src="Images/Campeones/Brand.png" class="champicon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Brand</img></td>
+                <td>
+                    <img src="Images/Clases y origenes/Elementalist.png" class="oriclasicon" title="Elementalista"/>
+                    <img src="Images/Clases y origenes/Demon-2.png" class="oriclasicon" title="Demonio"/>
+                </td>
+                <td><img src="Images/oro.png" class="oroicon">4</img></td>
+                <td>700</td>
+                <td>25</td>
+                <td>20</td>
+                <td>36</td>
+                <td>60</td>
+                <td>0.6</td>
+                <td style="font-size: 25px"><b style="color:white">|||</b>||<span class="hidetext">3</span></td>
+            </tr>
+            <tr>
+                <td><img src="Images/icon-champtier-2.png"></img><span class="hidetext">2</span></td>
+                <td class="leftside"><img src="Images/Campeones/Leona.png" class="champicon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Leona</img></td>
+                <td>
+                    <img src="Images/Clases y origenes/Guardian-1.png" class="oriclasicon" title="Guardian"/>
+                    <img src="Images/Clases y origenes/Noble.png" class="oriclasicon" title="Noble"/>
+                </td>
+                <td><img src="Images/oro.png" class="oroicon">4</img></td>
+                <td>750</td>
+                <td>55</td>
+                <td>20</td>
+                <td>25</td>
+                <td>45</td>
+                <td>0.55</td>
+                <td style="font-size: 25px"><b style="color:white">|</b>||||<span class="hidetext">1</span></td>
+            </tr>
+            <tr>
+                <td><img src="Images/icon-champtier-2.png"></img><span class="hidetext">2</span></td>
+                <td class="leftside"><img src="Images/Campeones/MissFortune.png" class="champicon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Miss Fortune</img></td>
+                <td>
+                    <img src="Images/Clases y origenes/Gunslinger-1.png" class="oriclasicon" title="Pistolero"/>
+                    <img src="Images/Clases y origenes/Pirate-1.png" class="oriclasicon" title="Pirata"/>
+                </td>
+                <td><img src="Images/oro.png" class="oroicon">5</img></td>
+                <td>650</td>
+                <td>20</td>
+                <td>20</td>
+                <td>64</td>
+                <td>75</td>
+                <td>0.85</td>
+                <td style="font-size: 25px"><b style="color:white">|||</b>||<span class="hidetext">3</span></td>
+            </tr>
+            <tr>
+                <td><img src="Images/icon-champtier-2.png"></img><span class="hidetext">2</span></td>
+                <td class="leftside"><img src="Images/Campeones/Nidalee.png" class="champicon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nidalee</img></td>
+                <td>
+                    <img src="Images/Clases y origenes/Shapeshifter-1.png" class="oriclasicon" title="Cambiaformas"/>
+                    <img src="Images/Clases y origenes/Wild.png" class="oriclasicon" title="Salvaje"/>
+                </td>
+                <td><img src="Images/oro.png" class="oroicon">1</img></td>
+                <td>500</td>
+                <td>20</td>
+                <td>20</td>
+                <td>33</td>
+                <td>50</td>
+                <td>0.65</td>
+                <td style="font-size: 25px"><b style="color:white">|||</b>||<span class="hidetext">3</span></td>
+            </tr>
+            <tr>
+                <td><img src="Images/icon-champtier-2.png"></img><span class="hidetext">2</span></td>
+                <td class="leftside"><img src="Images/Campeones/Pyke.png" class="champicon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pyke</img></td>
+                <td>
+                    <img src="Images/Clases y origenes/Assassin.png" class="oriclasicon" title="Asesino"/>
+                    <img src="Images/Clases y origenes/Pirate-1.png" class="oriclasicon" title="Pirata"/>
+                </td>
+                <td><img src="Images/oro.png" class="oroicon">2</img></td>
+                <td>600</td>
+                <td>25</td>
+                <td>20</td>
+                <td>36</td>
+                <td>60</td>
+                <td>0.6</td>
+                <td style="font-size: 25px"><b style="color:white">|</b>||||<span class="hidetext">1</span></td>
+            </tr>
+            <tr>
+                <td><img src="Images/icon-champtier-2.png"></img><span class="hidetext">2</span></td>
+                <td class="leftside"><img src="Images/Campeones/Yasuo.png" class="champicon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Yasuo</img></td>
+                <td>
+                    <img src="Images/Clases y origenes/Blademaster.png" class="oriclasicon" title="Espadachin"/>
+                    <img src="Images/Clases y origenes/Exile-1.png" class="oriclasicon" title="Exiliado"/>
+                </td>
+                <td><img src="Images/oro.png" class="oroicon">2</img></td>
+                <td>700</td>
+                <td>35</td>
+                <td>20</td>
+                <td>65</td>
+                <td>65</td>
+                <td>1</td>
+                <td style="font-size: 25px"><b style="color:white">|</b>||||<span class="hidetext">1</span></td>
+            </tr>
+            <tr>
+                    <td><img src="Images/icon-champtier-3.png"></img><span class="hidetext">3</span></td>
+                    <td class="leftside"><img src="Images/Campeones/Ahri.png" class="champicon">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ahri</img></td>
+                    <td>
+                        <img src="Images/Clases y origenes/Sorcerer-1.png" class="oriclasicon" title="Hechizero"/>
+                        <img src="Images/Clases y origenes/Wild.png" class="oriclasicon" title="Salvaje"/>
+                    </td>
+                    <td><img src="Images/oro.png" class="oroicon">2</img></td>
+                    <td>450</td>
+                    <td>20</td>
+                    <td>20</td>
+                    <td>28</td>
+                    <td>50</td>
+                    <td>0.55</td>
+                    <td style="font-size: 25px"><b style="color:white">|||</b>||<span class="hidetext">3</span></td>
             </tr>
             <tr>
                 <td></td>
@@ -337,189 +564,7 @@
                 <td></td>
                 <td></td>
             </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-
+        </tbody>
         </table>
 
     </div>
