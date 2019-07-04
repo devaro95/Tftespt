@@ -43,7 +43,7 @@ background-size: cover;
     font-weight: 100;
     height: 52px;
     line-height: normal;
-    position: absolute;
+    position: relative;
     text-align: left;
     width: 100%;
 	z-index: 3000000;
@@ -112,22 +112,23 @@ background-size: cover;
 body{
 	margin:0;
 	position: relative;
-	display: block;
+	
 	font-family: 'Merriweather', serif;
 }
 
 #menu{
 	font-family: 'Merriweather', serif;
-	position: absolute;
+	position: relative;
 	min-width: 1152px;
 	width: 1152px;
 	height: 775px;
 	margin: auto;
-	margin-top: 6%;
+	margin-top: 3%;
 	left: 0;
     right: 0;
     top: 0;
 	bottom: 0;
+	margin-bottom: 90px;
 }
 #leftmenu{	
 	width: 70%;
@@ -288,4 +289,22 @@ img {
 	top: 0px; 
 	left: 0px; 
 	width: 100%;
+}
+
+#footer{
+	width:94%;
+	height:150px;
+	border-top: 2px solid #c9aa71;
+	border-left: 2px solid #c9aa71;
+	border-right: 2px solid #c9aa71;
+	background-color: #121212;
+	position: relative;
+	left: 0;
+    right: 0;
+    top: 0;
+	bottom: 0;
+	display: block;
+	margin: auto;
+	border-radius: 10px 10px 0px 0px;
+	color: #c9aa71; 
 }
