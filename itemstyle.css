@@ -61,7 +61,6 @@
 }
 #menuItem{
     font-family: 'Merriweather', serif;
-	position: absolute;
 	width: 95%;
 	height: 775px;
 	margin: auto;
@@ -70,7 +69,7 @@
     right: 0;
     top: 0;
     bottom: 0;
-    
+    position: relative;
 }
 .navBarItem{
     width: 50px; 

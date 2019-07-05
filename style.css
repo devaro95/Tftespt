@@ -1,3 +1,6 @@
+body{
+	min-width: 1500px;
+}
 #index{
 background: url(Images/TEAMFIGHT-TACTICS-ISLAND-LEAD.jpg) no-repeat center center fixed;
 -webkit-background-size: cover;
