@@ -2,12 +2,112 @@
 
 }
 .container{
-    border:solid;
+    border: 2px solid #c9aa71;
     width: 100%;
     height: 20%;
     background: rgb(18,18,18, 0.75);
     display: flex;
+    margin-bottom: 5px;
+    font-size: 15px;
 }
 .titleClase{
     background-color: rgb(18,18,18); 
+    display: flex;
+    width: 55%; 
+    border-right: 2px solid #c9aa71;
+}
+.leftTitle{
+    display: block; 
+    width: 50%;
+}
+.imgTitleCont{
+    text-align: center;
+    margin-top: 30px;
+}
+img{
+    width: 40px;
+}
+.colorCentro{
+    text-align: center; 
+    color:  #c9aa71;
+}
+.rightTitle{
+   display: block; 
+   width: 50%;
+   margin: auto;
+}
+.descClase{
+    display: block; 
+    width: 55%; 
+    overflow: hidden;
+}
+.topDesc{
+    width: 100%;
+    height: 50%; 
+    display: flex; 
+    border-bottom: 2px solid #c9aa71;
+}
+.colorMargin{
+    color:  #c9aa71;
+    margin: auto;
+    width: 90%;
+    display: flex;
+}
+.botDesc{
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.marginAuto{
+    margin: auto;
+}
+#menuClases{
+    font-family: 'Merriweather', serif;
+	position: relative;
+	min-width: 1152px;
+	width: 1400px;
+	height: 775px;
+	margin: auto;
+	margin-top: 3%;
+	left: 0;
+    right: 0;
+    top: 0;
+	bottom: 0;
+	margin-bottom: 90px;
+}
+.dorado{
+    border: solid 2px #e6a42a;
+}
+.azul{
+    border: solid 2px #15129b;
+}
+.gris{
+    border: solid 2px #4b4b4b;
+}
+.morado{
+    border: solid 2px #580a55;
+}
+.verde{
+    border: solid 2px #083d1e;
+}
+.numero{
+    border:solid #c9aa71;
+    height: 17px;
+    width: 17px;
+    text-align: center;
+    margin-right: 5px;
+    color: white;
+    background: #c9aa71;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.tituloColum{
+    width: 100%;margin-right: 5px;
+    text-align: center;
+    background-color: rgb(18,18,18); 
+    border: 2px solid #c9aa71;
+    margin-bottom: 10px;
+    height: 8%;
+    color: #c9aa71;
+    font-size: 30px;
 }
