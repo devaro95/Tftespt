@@ -33,7 +33,7 @@
     -webkit-box-align: center;
     align-items: center;
     width: 100%;
-    height: 46px;
+    height: 50px;
     padding: 0px 8px 0px 24px;
     transition: all 0.15s ease 0s;
 }
@@ -53,7 +53,7 @@
     width: 6%;
 }
 .descItem{
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.5;
     flex: 1 1 0%;
     display: block;
@@ -64,7 +64,7 @@
 	width: 95%;
 	height: 775px;
 	margin: auto;
-	margin-top: 6%;
+	margin-top: 3%;
 	left: 0;
     right: 0;
     top: 0;
@@ -105,4 +105,7 @@
 }
 .itemName{
     padding-top: 5px;
+}
+.filaimpar{
+    background-color: rgb(18,18,18, 0.75);
 }

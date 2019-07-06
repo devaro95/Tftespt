@@ -1,0 +1,78 @@
+li{
+    margin-bottom: 5px;
+}
+.notes{
+    list-style: circle
+}
+.titleParche{
+    font-size:25px;
+    padding:10px;
+    text-align: center;
+    background-color: rgb(18,18,18); 
+    color: #c9aa71; 
+    border-bottom: 2px solid #c9aa71;
+    margin-bottom: 10px;
+}
+.subTitle{
+    width: 80%;
+    margin:auto;
+    padding:10px;
+    text-align: center;
+    background-color: rgb(18,18,18); 
+    color: #c9aa71; 
+    border: 2px solid #c9aa71;
+}
+.date{
+    color: #c9aa71; 
+    text-align: center;
+    margin:auto;
+    padding: 20px; 
+    font-size: 20px;
+}
+.contentParche{
+    color: #c9aa71; 
+    width: 80%;
+    margin:auto;
+}
+ul{
+    list-style: none"
+}
+.imagen{
+    width: 40px;
+    height: 40px;
+    border:solid 1px;
+}
+img{
+    width:13px; 
+    margin-right: 5px
+}
+.encabezado{
+    margin-bottom: 10px;
+    display:flex;
+}
+.flechaVerde{
+    transform: rotate(180deg); 
+}
+.tipo{
+    padding: 10px;
+    text-decoration: underline; 
+    font-weight: bold;
+}
+.boton{
+    color: #c9aa71; 
+}
+a{
+    color: #c9aa71; 
+    cursor: hand;
+}
+a:hover{
+    color:#795616;
+    cursor: pointer ;
+}
+.registroDesc{
+    padding-top: 20px;
+    font-size: 20px;
+}
+.registroDesc ul{
+    list-style: none;
+}
