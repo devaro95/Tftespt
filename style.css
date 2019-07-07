@@ -296,6 +296,7 @@ img {
 }
 
 #footer{
+	min-width: 1400px;
 	width:94%;
 	height:150px;
 	border-top: 2px solid #c9aa71;
@@ -320,9 +321,8 @@ img {
 .noticia{
 	width:99.5%;
 	line-height: 45px;
-	
 	height: 50px;
-	
+	text-align: center;
 }
 
 .noticia:nth-child(even){

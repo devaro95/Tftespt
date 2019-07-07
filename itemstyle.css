@@ -61,8 +61,8 @@
 }
 #menuItem{
     font-family: 'Merriweather', serif;
-	width: 95%;
-	height: 775px;
+    width: 95%;
+    min-width: 95%;
 	margin: auto;
 	margin-top: 3%;
 	left: 0;
@@ -102,6 +102,13 @@
 }
 #itemList{
     border-radius: 10px;
+    margin:auto; 
+    margin-bottom: 10px; 
+    background: rgb(18,18,18, 0.75); 
+    border:solid #c9aa71;
+    text-align: center; 
+    width:80%;
+    min-width: 80%;
 }
 .itemName{
     padding-top: 5px;

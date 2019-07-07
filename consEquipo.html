@@ -1,0 +1,135 @@
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="consEquipo.css">
+    <link rel="stylesheet" type="text/css" href="clasesstyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <?php
+    $servername = "localhost";
+    $username = "root";
+    $password = "";
+    // Create connection
+    $conn = new mysqli($servername, $username, $password);
+    // Check connection
+    if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+    } 
+    echo "Connected successfully";
+    ?>
+</head>
+
+<body id="inicio" style="width: 100%;height:100%">
+    <div style="display: block;">
+        <div id="navbar">
+            <a href="/">
+                <div id="leftbar"><img src="Images/newlogo.png" style="width:110px"></div>
+            </a>
+            <div id="midbar">
+                <a class="navbarlink" href="campeones.html">CAMPEONES</a>
+                <a class="navbarlink" href="items.html">OBJETOS</a>
+                <a class="selected" href="clases.html">CLASES Y ORIGENES</a>
+                <a class="navbarlink" href="parche.html">NOCHAS PARCHE</a>
+            </div>
+            <a href="https://twitter.com/TFT_Esp">
+                <div id="rightbar"><img src="Images/twitter.png" style="width:45px; padding-top:8px;"></div>
+            </a>
+        </div>
+    </div>
+    <div style="width: 90%; border:solid #c9aa71; margin:3% auto; background: rgb(18,18,18, 0.75); ">
+        <div id="consTitle" style="border-bottom: solid #c9aa71">
+            CONSTRUCTOR DE EQUIPO
+        </div>
+        <div
+            style="width:1200px; margin: 1% auto;display: flex;  color: #c9aa71;padding: 1%;">
+            <div style="width: 61%;margin:auto; height: 90%;">
+                <div style="width: 100%;min-height: 500px; border:solid  #c9aa71; margin-bottom: 20px">
+                </div>
+                <div style="display: flex; height: 100px; width: 100%;">
+                    <div style="width:45%; margin:auto">
+                        <div id="consTitle" style="border: 2px solid #c9aa71;">
+                            CLASES
+                        </div>
+                    </div>
+                    <div style="width:45%; margin:auto; border: 2px solid #c9aa71;">
+                        <div id="consTitle">
+                            ORIGENES
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 30%; border:solid  #c9aa71;margin:auto; height: 90%;padding: 10px">
+                <div>COSTE 1</div>
+                <div style="margin: 10px 0">
+                    <img src="Images/Campeones/Nidalee.png" style="width: 50px" class="gris">
+                    <img src="Images/Campeones/Darius.png" style="width: 50px" class="gris">
+                    <img src="Images/Campeones/Garen.png" style="width: 50px" class="gris">
+                    <img src="Images/Campeones/Graves.png" style="width: 50px" class="gris">
+                    <img src="Images/Campeones/Kassadin.png" style="width: 50px" class="gris">
+                    <img src="Images/Campeones/Khazix.png" style="width: 50px" class="gris">
+                    <img src="Images/Campeones/Tristana.png" style="width: 50px" class="gris">
+                    <img src="Images/Campeones/Vayne.png" style="width: 50px" class="gris">
+                    <img src="Images/Campeones/Warwick.png" style="width: 50px" class="gris">
+                    <img src="Images/Campeones/Fiora.png" style="width: 50px" class="gris">
+                    <img src="Images/Campeones/Mordekaiser.png" style="width: 50px" class="gris">
+                </div>
+                <div>COSTE 2</div>
+                <div style="margin: 10px 0">
+                    <img src="Images/Campeones/Pyke.png" style="width: 50px" class="verde">
+                    <img src="Images/Campeones/Yasuo.png" style="width: 50px" class="verde">
+                    <img src="Images/Campeones/Ahri.png" style="width: 50px" class="verde">
+                    <img src="Images/Campeones/Elise.png" style="width: 50px" class="verde">
+                    <img src="Images/Campeones/Lissandra.png" style="width: 50px" class="verde">
+                    <img src="Images/Campeones/Lulu.png" style="width: 50px" class="verde">
+                    <img src="Images/Campeones/Zed.png" style="width: 50px" class="verde">
+                    <img src="Images/Campeones/Blitzcrank.png" style="width: 50px" class="verde">
+                    <img src="Images/Campeones/Lucian.png" style="width: 50px" class="verde">
+                    <img src="Images/Campeones/Shen.png" style="width: 50px" class="verde">
+                    <img src="Images/Campeones/Varus.png" style="width: 50px" class="verde">
+                    <img src="Images/Campeones/RekSai.png" style="width: 50px" class="verde">
+                </div>
+                <div>COSTE 3</div>
+                <div style="margin: 10px 0">
+                    <img src="Images/Campeones/Ashe.png" style="width: 50px" class="azul">
+                    <img src="Images/Campeones/Kennen.png" style="width: 50px" class="azul">
+                    <img src="Images/Campeones/Morgana.png" style="width: 50px" class="azul">
+                    <img src="Images/Campeones/Shyvana.png" style="width: 50px" class="azul">
+                    <img src="Images/Campeones/Veigar.png" style="width: 50px" class="azul">
+                    <img src="Images/Campeones/Volibear.png" style="width: 50px" class="azul">
+                    <img src="Images/Campeones/Aatrox.png" style="width: 50px" class="azul">
+                    <img src="Images/Campeones/Katarina.png" style="width: 50px" class="azul">
+                    <img src="Images/Campeones/Rengar.png" style="width: 50px" class="azul">
+                    <img src="Images/Campeones/Evelynn.png" style="width: 50px" class="azul">
+                    <img src="Images/Campeones/Gangplank.png" style="width: 50px" class="azul">
+                    <img src="Images/Campeones/Poppy.png" style="width: 50px" class="azul">
+                </div>
+                <div>COSTE 4</div>
+                <div style="margin: 10px 0">
+                    <img src="Images/Campeones/AurelionSol.png" style="width: 50px" class="morado">
+                    <img src="Images/Campeones/Chogath.png" style="width: 50px" class="morado">
+                    <img src="Images/Campeones/Draven.png" style="width: 50px" class="grmoradois">
+                    <img src="Images/Campeones/Gnar.png" style="width: 50px" class="morado">
+                    <img src="Images/Campeones/Sejuani.png" style="width: 50px" class="morado">
+                    <img src="Images/Campeones/Akali.png" style="width: 50px" class="morado">
+                    <img src="Images/Campeones/Brand.png" style="width: 50px" class="morado">
+                    <img src="Images/Campeones/Leona.png" style="width: 50px" class="morado">
+                    <img src="Images/Campeones/Kindred.png" style="width: 50px" class="morado">
+                </div>
+                <div>COSTE 5</div>
+                <div style="margin: 10px 0">
+                    <img src="Images/Campeones/Swain.png" style="width: 50px" class="dorado">
+                    <img src="Images/Campeones/Anivia.png" style="width: 50px" class="dorado">
+                    <img src="Images/Campeones/MissFortune.png" style="width: 50px" class="dorado">
+                    <img src="Images/Campeones/Karthus.png" style="width: 50px" class="dorado">
+                    <img src="Images/Campeones/Kayle.png" style="width: 50px" class="dorado">
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</body>
