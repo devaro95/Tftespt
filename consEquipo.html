@@ -35,10 +35,11 @@
                 <div id="leftbar"><img src="Images/newlogo.png" style="width:110px"></div>
             </a>
             <div id="midbar">
+                <a class="navbarlink" href="index.html">INICIO</a>
                 <a class="navbarlink" href="campeones.html">CAMPEONES</a>
                 <a class="navbarlink" href="items.html">OBJETOS</a>
                 <a class="selected" href="clases.html">CLASES Y ORIGENES</a>
-                <a class="navbarlink" href="parche.html">NOCHAS PARCHE</a>
+                <a class="narvarDisabled">CONSTRUCTOR DE EQUIPO</a>
             </div>
             <a href="https://twitter.com/TFT_Esp">
                 <div id="rightbar"><img src="Images/twitter.png" style="width:45px; padding-top:8px;"></div>
@@ -49,89 +50,177 @@
         <div id="consTitle" style="border-bottom: solid #c9aa71">
             CONSTRUCTOR DE EQUIPO
         </div>
-        <div
-            style="width:1200px; margin: 1% auto;display: flex;  color: #c9aa71;padding: 1%;">
-            <div style="width: 61%;margin:auto; height: 90%;">
-                <div id="seleccionados" style="width: 100%;min-height: 500px; border:solid  #c9aa71; margin-bottom: 20px">
-
+        <div style="width:1200px; margin: 1% auto;display: flex;  color: #c9aa71;padding: 1%;">
+            <div style="width: 61%;margin:0 auto; min-height: 90%;">
+                <div id="seleccionados"
+                    style="width: 100%;min-height: 500px; border:solid  #c9aa71; margin-bottom: 20px; ">
                 </div>
                 <div style="display: flex; height: 100px; width: 100%;">
-                    <div style="width:45%; margin:auto">
+                    <div style="width:45%; margin:auto;">
                         <div id="consTitle" style="border: 2px solid #c9aa71;">
                             CLASES
                         </div>
+                        <div style="margin: 10px; display: flex;">
+                            <div style="width: 45px">
+                                <img id="Asesino" src="Images/Clases y origenes/Assassin.png" class="byn">
+                                <div style="display: flex; margin: 5px auto">
+                                    <div style="width: 49%; height: 7px;border:solid"></div>
+                                    <div style="width: 49%; height: 7px;border:solid"></div>
+                                </div>
+
+                            </div>
+                            <div style="width: 45px; ">
+                                <img id="Luchador" src="Images/Clases y origenes/Brawler.png" class="byn">
+                            </div>
+                            <div style="width: 45px">
+                                <img id="Cazadpr" src="Images/Clases y origenes/Ranger-1.png" class="byn">
+                            </div>
+                            <div style="width: 45px">
+                                <img id="Espadachin" src="Images/Clases y origenes/Blademaster.png" class="byn">
+                            </div>
+                            <div style="width: 45px">
+                                <img id="Elementalista" src="Images/Clases y origenes/Elementalist.png" class="byn">
+                            </div>
+                            <div style="width: 45px">
+                                <img id="Caballero" src="Images/Clases y origenes/Knight-2.png" class="byn">
+                            </div>
+                            <div style="width: 45px">
+                                <img id="Cambiaformas" src="Images/Clases y origenes/Shapeshifter-1.png" class="byn">
+                            </div>
+                            <div style="width: 45px">
+                                <img id="Hechicero" src="Images/Clases y origenes/Sorcerer-1.png" class="byn">
+                            </div>
+                            <div style="width: 45px">
+                                <img id="Protecto" src="Images/Clases y origenes/Guardian-1.png" class="byn">
+                            </div>
+                            <div style="width: 45px">
+                                <img id="Pistolero" src="Images/Clases y origenes/Gunslinger-1.png" class="byn">
+                            </div>
+                        </div>
                     </div>
-                    <div style="width:45%; margin:auto; border: 2px solid #c9aa71;">
-                        <div id="consTitle">
+                    <div style="width:45%; margin:auto;">
+                        <div id="consTitle" style="border: 2px solid #c9aa71;">
                             ORIGENES
+                        </div>
+                        <div style="margin: 10px">
+                            <img src="Images/Clases y origenes/Assassin.png" class="byn">
                         </div>
                     </div>
                 </div>
             </div>
-            <div style="width: 30%; border:solid  #c9aa71;margin:auto; height: 90%;padding: 10px">
+            <div style="width: 30%; border:solid  #c9aa71;margin:0 auto; height: 90%;padding: 10px">
                 <div>COSTE 1</div>
                 <div style="margin: 10px 0">
-                    <img onclick="select('Nidalee')" src="Images/Campeones/Nidalee.png" style="width: 50px" class="gris">
-                    <img src="Images/Campeones/Darius.png" style="width: 50px" class="gris">
-                    <img src="Images/Campeones/Garen.png" style="width: 50px" class="gris">
-                    <img src="Images/Campeones/Graves.png" style="width: 50px" class="gris">
-                    <img src="Images/Campeones/Kassadin.png" style="width: 50px" class="gris">
-                    <img src="Images/Campeones/Khazix.png" style="width: 50px" class="gris">
-                    <img src="Images/Campeones/Tristana.png" style="width: 50px" class="gris">
-                    <img src="Images/Campeones/Vayne.png" style="width: 50px" class="gris">
-                    <img src="Images/Campeones/Warwick.png" style="width: 50px" class="gris">
-                    <img src="Images/Campeones/Fiora.png" style="width: 50px" class="gris">
-                    <img src="Images/Campeones/Mordekaiser.png" style="width: 50px" class="gris">
+                    <img id="Nidalee" onclick="select('Nidalee', 'gris')" src="Images/Campeones/Nidalee.png"
+                        style="width: 50px" class="gris">
+                    <img id="Darius" onclick="select('Darius')" src="Images/Campeones/Darius.png" style="width: 50px"
+                        class="gris">
+                    <img id="Garen" onclick="select('Garen')" src="Images/Campeones/Garen.png" style="width: 50px"
+                        class="gris">
+                    <img id="Graves" onclick="select('Graves')" src="Images/Campeones/Graves.png" style="width: 50px"
+                        class="gris">
+                    <img id="Kassadin" onclick="select('Kassadin')" src="Images/Campeones/Kassadin.png"
+                        style="width: 50px" class="gris">
+                    <img id="Khazix" onclick="select('Khazix')" src="Images/Campeones/Khazix.png" style="width: 50px"
+                        class="gris">
+                    <img id="Tristana" onclick="select('Tristana')" src="Images/Campeones/Tristana.png"
+                        style="width: 50px" class="gris">
+                    <img id="Vayne" onclick="select('Vayne')" src="Images/Campeones/Vayne.png" style="width: 50px"
+                        class="gris">
+                    <img id="Warwick" onclick="select('Warwick')" src="Images/Campeones/Warwick.png" style="width: 50px"
+                        class="gris">
+                    <img id="Fiora" onclick="select('Fiora')" src="Images/Campeones/Fiora.png" style="width: 50px"
+                        class="gris">
+                    <img id="Mordekaiser" onclick="select('Mordekaiser')" src="Images/Campeones/Mordekaiser.png"
+                        style="width: 50px" class="gris">
                 </div>
                 <div>COSTE 2</div>
                 <div style="margin: 10px 0">
-                    <img src="Images/Campeones/Pyke.png" style="width: 50px" class="verde">
-                    <img src="Images/Campeones/Yasuo.png" style="width: 50px" class="verde">
-                    <img src="Images/Campeones/Ahri.png" style="width: 50px" class="verde">
-                    <img src="Images/Campeones/Elise.png" style="width: 50px" class="verde">
-                    <img src="Images/Campeones/Lissandra.png" style="width: 50px" class="verde">
-                    <img src="Images/Campeones/Lulu.png" style="width: 50px" class="verde">
-                    <img src="Images/Campeones/Zed.png" style="width: 50px" class="verde">
-                    <img src="Images/Campeones/Blitzcrank.png" style="width: 50px" class="verde">
-                    <img src="Images/Campeones/Lucian.png" style="width: 50px" class="verde">
-                    <img src="Images/Campeones/Shen.png" style="width: 50px" class="verde">
-                    <img src="Images/Campeones/Varus.png" style="width: 50px" class="verde">
-                    <img src="Images/Campeones/RekSai.png" style="width: 50px" class="verde">
+                    <img id="Pyke" onclick="select('Pyke')" src="Images/Campeones/Pyke.png" style="width: 50px"
+                        class="verde">
+                    <img id="Yasuo" onclick="select('Yasuo')" src="Images/Campeones/Yasuo.png" style="width: 50px"
+                        class="verde">
+                    <img id="Ahri" onclick="select('Ahri')" src="Images/Campeones/Ahri.png" style="width: 50px"
+                        class="verde">
+                    <img id="Elise" onclick="select('Elise')" src="Images/Campeones/Elise.png" style="width: 50px"
+                        class="verde">
+                    <img id="Lissandra" onclick="select('Lissandra')" src="Images/Campeones/Lissandra.png"
+                        style="width: 50px" class="verde">
+                    <img id="Lulu" onclick="select('Lulu')" src="Images/Campeones/Lulu.png" style="width: 50px"
+                        class="verde">
+                    <img id="Zed" onclick="select('Zed')" src="Images/Campeones/Zed.png" style="width: 50px"
+                        class="verde">
+                    <img id="Blitzcrank" onclick="select('Blitzcrank')" src="Images/Campeones/Blitzcrank.png"
+                        style="width: 50px" class="verde">
+                    <img id="Lucian" onclick="select('Lucian')" src="Images/Campeones/Lucian.png" style="width: 50px"
+                        class="verde">
+                    <img id="Shen" onclick="select('Shen')" src="Images/Campeones/Shen.png" style="width: 50px"
+                        class="verde">
+                    <img id="Varus" onclick="select('Varus')" src="Images/Campeones/Varus.png" style="width: 50px"
+                        class="verde">
+                    <img id="RekSai" onclick="select('RekSai')" src="Images/Campeones/RekSai.png" style="width: 50px"
+                        class="verde">
                 </div>
                 <div>COSTE 3</div>
                 <div style="margin: 10px 0">
-                    <img src="Images/Campeones/Ashe.png" style="width: 50px" class="azul">
-                    <img src="Images/Campeones/Kennen.png" style="width: 50px" class="azul">
-                    <img src="Images/Campeones/Morgana.png" style="width: 50px" class="azul">
-                    <img src="Images/Campeones/Shyvana.png" style="width: 50px" class="azul">
-                    <img src="Images/Campeones/Veigar.png" style="width: 50px" class="azul">
-                    <img src="Images/Campeones/Volibear.png" style="width: 50px" class="azul">
-                    <img src="Images/Campeones/Aatrox.png" style="width: 50px" class="azul">
-                    <img src="Images/Campeones/Katarina.png" style="width: 50px" class="azul">
-                    <img src="Images/Campeones/Rengar.png" style="width: 50px" class="azul">
-                    <img src="Images/Campeones/Evelynn.png" style="width: 50px" class="azul">
-                    <img src="Images/Campeones/Gangplank.png" style="width: 50px" class="azul">
-                    <img src="Images/Campeones/Poppy.png" style="width: 50px" class="azul">
+                    <img id="Ashe" onclick="select('Ashe')" src="Images/Campeones/Ashe.png" style="width: 50px"
+                        class="azul">
+                    <img id="Kennen" onclick="select('Kennen')" src="Images/Campeones/Kennen.png" style="width: 50px"
+                        class="azul">
+                    <img id="Morgana" onclick="select('Morgana')" src="Images/Campeones/Morgana.png" style="width: 50px"
+                        class="azul">
+                    <img id="Shyvana" onclick="select('Shyvana')" src="Images/Campeones/Shyvana.png" style="width: 50px"
+                        class="azul">
+                    <img id="Veigar" onclick="select('Veigar')" src="Images/Campeones/Veigar.png" style="width: 50px"
+                        class="azul">
+                    <img id="Volibear" onclick="select('Volibear')" src="Images/Campeones/Volibear.png"
+                        style="width: 50px" class="azul">
+                    <img id="Aatrox" onclick="select('Aatrox')" src="Images/Campeones/Aatrox.png" style="width: 50px"
+                        class="azul">
+                    <img id="Katarina" onclick="select('Katarina')" src="Images/Campeones/Katarina.png"
+                        style="width: 50px" class="azul">
+                    <img id="Rengar" onclick="select('Rengar')" src="Images/Campeones/Rengar.png" style="width: 50px"
+                        class="azul">
+                    <img id="Evelynn" onclick="select('Evelynn')" src="Images/Campeones/Evelynn.png" style="width: 50px"
+                        class="azul">
+                    <img id="Gangplank" onclick="select('Gangplank')" src="Images/Campeones/Gangplank.png"
+                        style="width: 50px" class="azul">
+                    <img id="Poppy" onclick="select('Poppy')" src="Images/Campeones/Poppy.png" style="width: 50px"
+                        class="azul">
                 </div>
                 <div>COSTE 4</div>
                 <div style="margin: 10px 0">
-                    <img src="Images/Campeones/AurelionSol.png" style="width: 50px" class="morado">
-                    <img src="Images/Campeones/Chogath.png" style="width: 50px" class="morado">
-                    <img src="Images/Campeones/Draven.png" style="width: 50px" class="morado">
-                    <img src="Images/Campeones/Gnar.png" style="width: 50px" class="morado">
-                    <img src="Images/Campeones/Sejuani.png" style="width: 50px" class="morado">
-                    <img src="Images/Campeones/Akali.png" style="width: 50px" class="morado">
-                    <img src="Images/Campeones/Brand.png" style="width: 50px" class="morado">
-                    <img src="Images/Campeones/Leona.png" style="width: 50px" class="morado">
-                    <img src="Images/Campeones/Kindred.png" style="width: 50px" class="morado">
+                    <img id="AurelionSol" onclick="select('AurelionSol')" src="Images/Campeones/AurelionSol.png"
+                        style="width: 50px" class="morado">
+                    <img id="Chogath" onclick="select('GaChogathngplank')" src="Images/Campeones/Chogath.png"
+                        style="width: 50px" class="morado">
+                    <img id="Draven" onclick="select('Draven')" src="Images/Campeones/Draven.png" style="width: 50px"
+                        class="morado">
+                    <img id="Gnar" onclick="select('Gnar')" src="Images/Campeones/Gnar.png" style="width: 50px"
+                        class="morado">
+                    <img id="Sejuani" onclick="select('Sejuani')" src="Images/Campeones/Sejuani.png" style="width: 50px"
+                        class="morado">
+                    <img id="Akali" onclick="select('Akali')" src="Images/Campeones/Akali.png" style="width: 50px"
+                        class="morado">
+                    <img id="Brand" onclick="select('Brand')" src="Images/Campeones/Brand.png" style="width: 50px"
+                        class="morado">
+                    <img id="Leona" onclick="select('Leona')" src="Images/Campeones/Leona.png" style="width: 50px"
+                        class="morado">
+                    <img id="Kindred" onclick="select('Kindred')" src="Images/Campeones/Kindred.png" style="width: 50px"
+                        class="morado">
                 </div>
                 <div>COSTE 5</div>
                 <div style="margin: 10px 0">
-                    <img src="Images/Campeones/Swain.png" style="width: 50px" class="dorado">
-                    <img src="Images/Campeones/Anivia.png" style="width: 50px" class="dorado">
-                    <img src="Images/Campeones/MissFortune.png" style="width: 50px" class="dorado">
-                    <img src="Images/Campeones/Karthus.png" style="width: 50px" class="dorado">
-                    <img src="Images/Campeones/Kayle.png" style="width: 50px" class="dorado">
+                    <img id="Swain" onclick="select('Swain')" src="Images/Campeones/Swain.png" style="width: 50px"
+                        class="dorado">
+                    <img id="Anivia" onclick="select('Anivia')" src="Images/Campeones/Anivia.png" style="width: 50px"
+                        class="dorado">
+                    <img id="MissFortune" onclick="select('MissFortune')" src="Images/Campeones/MissFortune.png"
+                        style="width: 50px" class="dorado">
+                    <img id="Karthus" onclick="select('Karthus')" src="Images/Campeones/Karthus.png" style="width: 50px"
+                        class="dorado">
+                    <img id="Kayle" onclick="select('Kayle')" src="Images/Campeones/Kayle.png" style="width: 50px"
+                        class="dorado">
                 </div>
 
             </div>

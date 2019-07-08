@@ -7,3 +7,34 @@
     color: #c9aa71;
     font-size: 20px;
 }
+.grande{
+    width: 70px;
+    margin: 37px;
+    cursor: pointer;
+}
+.gris:hover{
+    cursor: pointer;
+    filter: brightness(150%);
+}
+.verde:hover{
+    cursor: pointer;
+    filter: brightness(150%);
+}
+.azul:hover{
+    cursor: pointer;
+    filter: brightness(150%);
+}
+.morado:hover{
+    cursor: pointer;
+    filter: brightness(150%);
+}
+.dorado:hover{
+    cursor: pointer;
+    filter: brightness(150%);
+}
+.byn{
+    filter: grayscale(100%);
+}
+body img{
+    width: 45px;
+}
