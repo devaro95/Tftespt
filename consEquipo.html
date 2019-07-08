@@ -8,18 +8,24 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script src="javascript.js"></script>
+    <!--
     <?php
     $servername = "localhost";
     $username = "root";
     $password = "";
+    $basededatos = "ftfesp";
     // Create connection
-    $conn = new mysqli($servername, $username, $password);
+    $conn = mysqli_connect($servername, $username, $password, $basededatos);
     // Check connection
     if ($conn->connect_error) {
         die("Connection failed: " . $conn->connect_error);
     } 
-    echo "Connected successfully";
+    $consulta = "Select id from campeones where nombre = 'Nidalee'";
+    $nidalee = mysqli_query($conn, $consulta);
+    $a = mysqli_fetch_assoc($nidalee);
     ?>
+    -->
 </head>
 
 <body id="inicio" style="width: 100%;height:100%">
@@ -46,7 +52,8 @@
         <div
             style="width:1200px; margin: 1% auto;display: flex;  color: #c9aa71;padding: 1%;">
             <div style="width: 61%;margin:auto; height: 90%;">
-                <div style="width: 100%;min-height: 500px; border:solid  #c9aa71; margin-bottom: 20px">
+                <div id="seleccionados" style="width: 100%;min-height: 500px; border:solid  #c9aa71; margin-bottom: 20px">
+
                 </div>
                 <div style="display: flex; height: 100px; width: 100%;">
                     <div style="width:45%; margin:auto">
@@ -64,7 +71,7 @@
             <div style="width: 30%; border:solid  #c9aa71;margin:auto; height: 90%;padding: 10px">
                 <div>COSTE 1</div>
                 <div style="margin: 10px 0">
-                    <img src="Images/Campeones/Nidalee.png" style="width: 50px" class="gris">
+                    <img onclick="select('Nidalee')" src="Images/Campeones/Nidalee.png" style="width: 50px" class="gris">
                     <img src="Images/Campeones/Darius.png" style="width: 50px" class="gris">
                     <img src="Images/Campeones/Garen.png" style="width: 50px" class="gris">
                     <img src="Images/Campeones/Graves.png" style="width: 50px" class="gris">
@@ -110,7 +117,7 @@
                 <div style="margin: 10px 0">
                     <img src="Images/Campeones/AurelionSol.png" style="width: 50px" class="morado">
                     <img src="Images/Campeones/Chogath.png" style="width: 50px" class="morado">
-                    <img src="Images/Campeones/Draven.png" style="width: 50px" class="grmoradois">
+                    <img src="Images/Campeones/Draven.png" style="width: 50px" class="morado">
                     <img src="Images/Campeones/Gnar.png" style="width: 50px" class="morado">
                     <img src="Images/Campeones/Sejuani.png" style="width: 50px" class="morado">
                     <img src="Images/Campeones/Akali.png" style="width: 50px" class="morado">
