@@ -42,7 +42,7 @@
             <div style="width: 100%;text-align: center">
                 <div style="width:100%">
                     <!--Imagen noticia-->
-                    <img src="tf-soon.jpg" style="width: 100%;border-bottom: solid #c9aa71;">
+                    <img src=<?php echo '"/static/noticias/'.$datos['foto'].'"'?> style="width: 100%;border-bottom: solid #c9aa71;">
                 </div>
                 <!--Titulo noticia-->
                 <div id="tituloNoticia">
