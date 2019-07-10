@@ -226,7 +226,7 @@
 						$enlace = mysqli_connect("PMYSQL110.dns-servicio.com", "varo", "&qdGw743", "6795849_tftesp");
 						$resultado = $enlace->query('select slug, tipo, titular from noticias');
 						while($fila = $resultado->fetch_assoc()){
-							echo '<div class="noticia"><a href="noticias.php?s='.$fila['slug'].'">['.$fila['tipo'].'] '.$fila['titular'].'</a></div>';
+							echo '<div class="noticia"><a class="linknoticia" href="noticias.php?s='.$fila['slug'].'">['.$fila['tipo'].'] '.$fila['titular'].'</a></div>';
 						}
 						mysqli_close($enlace);
 					?>

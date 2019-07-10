@@ -339,7 +339,27 @@ img {
 	text-align: center;
 }
 
+.linknoticia{
+	text-decoration: none!important;
+	color: #c9aa71!important; 
+}
+
+.linknoticia:hover{
+	text-decoration: none!important;
+	color: white!important; 
+}
 .noticia:nth-child(even){
     background-color: rgb(18,18,18, 0.75);
 }
 
+a:-webkit-any-link {
+    color: #c9aa71!important;
+    cursor: pointer;
+    text-decoration: none!important;
+}
+
+a:-webkit-any-link:hover {
+    color: white!important;
+    cursor: pointer;
+    text-decoration: none!important;
+}
