@@ -21,14 +21,15 @@
 <body id="inicio">
 	<div style="display: block;">
 		<div id="navbar">
-			<a href="/">
+			<a href="index.php">
 				<div id="leftbar"><img src="Images/newlogo.png" style="width:110px"></div>
 			</a>
 			<div id="midbar">
-				<a class="navbarlink" href="index.html">INICIO</a>
-				<a class="navbarlink" href="campeones.html">CAMPEONES</a>
+				<a class="selected" href="index.php">INICIO</a>
+				<a class="navbarlink" href="campeones.php">CAMPEONES</a>
 				<a class="navbarlink" href="items.html">OBJETOS</a>
 				<a class="navbarlink" href="clases.html">CLASES Y ORIGENES</a>
+				<a class="navbarlink" href="composiciones.html">COMPOSICIONES</a>
 				<a class="narvarDisabled">CONSTRUCTOR DE EQUIPO</a>
 			</div>
 			<a href="https://twitter.com/TFT_Esp">
