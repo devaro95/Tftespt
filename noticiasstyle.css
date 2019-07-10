@@ -1,0 +1,35 @@
+.titularNoticias{
+    text-align: left;
+    width: 65%;
+    margin:auto;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.descripcionNoticia{
+    width: 60%;
+    margin: auto;
+    text-align: left;
+    margin-bottom: 20px;
+}
+#tituloNoticia{
+    font-size: 50px;
+    background-color: rgb(18,18,18);
+    padding: 5px;
+    border-bottom: solid; 
+    margin-bottom: 15px;
+}
+#menuNoticias{
+    font-family: 'Merriweather', serif;
+	position: relative;
+	min-width: 1152px;
+	width: 1152px;
+	margin: auto;
+	margin-top: 3%;
+	left: 0;
+    right: 0;
+    top: 0;
+	bottom: 0;
+	margin-bottom: 90px;
+}

@@ -1,5 +1,3 @@
-*{
-}
 #consTitle{
     text-align: center;
     background-color: rgb(18,18,18); 
@@ -33,8 +31,72 @@
     filter: brightness(150%);
 }
 .byn{
-    filter: grayscale(100%);
+    filter: brightness(35%);
+}
+.seleccionado{
+    filter: brightness(100%);
+    background-color: rgb(18,18,18);
 }
 body img{
-    width: 45px;
+    width: 35px;
+}
+.caja{
+    width: 25%;
+    height: 80px; 
+    margin-right: 10px;
+    border:solid 1px;
+}
+.numCaja{
+    width: 20%; 
+    text-align: center;
+}
+.numStilo{
+    border-right: solid 1px; 
+    border-bottom: solid 1px;
+}
+.aligCen{
+    text-align: center;
+}
+.espCaja{
+    display: flex; 
+    margin: 11px auto;
+}
+.caja1-1{
+    width: 100%; 
+    height: 13px;
+    border-top:solid 1px;
+}
+.caja1-2{
+    width: 50%; 
+    height: 13px;
+    border-right:solid 1px;
+    border-top:solid 1px;
+}
+.caja2-2{
+    width: 50%; 
+    height: 13px;
+    border-top:solid 1px;
+}
+.caja1-3{
+    width: 33%; 
+    height: 13px;
+    border-right:solid 1px;
+    border-top:solid 1px;
+}
+.caja2-3{
+    width: 33%; 
+    height: 13px;
+    border-top:solid 1px;
+}
+.caja3-3{
+    width: 33%; 
+    height: 13px;
+    border-left:solid 1px;
+    border-top:solid 1px;
+}
+.cajaDos{
+    width: 50%;
+    height: 80px; 
+    margin-right: 10px;
+    border:solid 1px;
 }
