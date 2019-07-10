@@ -62,7 +62,7 @@
 						while($fila = $resultado->fetch_assoc()){ ?>
                         <tr>
                             <td><?php echo '<img src="Images/icon-champtier-'.$fila['tier'].'.png"></img>'?><span class="hidetext"><?php echo $fila['tier']?></span></td>
-                            <td class="leftside"><?php echo '<img src="static/Campeones/'.$fila['id'].'.png" class="champicon"></img>'?>
+                            <td class="leftside"><?php echo '<img src="static/campeones/'.$fila['id'].'.png" class="champicon"></img>'?>
                             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $fila['nombre']?></img></td>
                             <td>
                             <?php 
@@ -78,9 +78,9 @@
                             <td><?php echo $fila['vida']?></td>
                             <td><?php echo $fila['armadura']?></td>
                             <td><?php echo $fila['rm']?></td>
+                            <td><?php echo $fila['dps']?></td>
                             <td><?php echo $fila['dano']?></td>
                             <td><?php echo $fila['vda']?></td>
-                            <td><?php echo $fila['dps']?></td>
                             <?php
                             if($fila['rango'] == 1){
                                 echo '<td style="font-size: 25px"><b style="color:white">|</b>||||<span class="hidetext">'. $fila['rango'] .'</span></td>';
