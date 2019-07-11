@@ -1,14 +1,16 @@
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
+	<meta charset="utf-8"/>
+	<title>TEAMFIGHT TACTICS - ESP</title>
+	<meta name="description" content="¡Aquí encontrarás toda la información que necesitas sobre Teamfight Tactics!"/>
+
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="shortcut icon" href="Images/icono.ico" />
-	<title>TEAMFIGHT TACTICS - ESP</title>
-	<meta charset="utf-8" />
 	<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="clasesstyle.css">
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 	<script>
 		(adsbygoogle = window.adsbygoogle || []).push({
@@ -16,6 +18,7 @@
 			enable_page_level_ads: true
 		});
 	</script>
+
 </head>
 
 <body id="inicio">
@@ -30,7 +33,7 @@
 				<a class="navbarlink" href="items.html">OBJETOS</a>
 				<a class="navbarlink" href="clases.html">CLASES Y ORIGENES</a>
 				<a class="navbarlink" href="composiciones.html">COMPOSICIONES</a>
-				<a class="narvarDisabled">CONSTRUCTOR DE EQUIPO</a>
+				<a class="navbarlink" href="constructor-de-equipo.html">CONSTRUCTOR DE EQUIPO</a>
 			</div>
 			<a href="https://twitter.com/TFT_Esp">
 				<div id="rightbar"><img src="Images/twitter.png" style="width:18px; padding-top:18px;"></div>
@@ -223,12 +226,13 @@
 
 				<div class="tierlist">
 					<?php
-						$enlace = mysqli_connect("PMYSQL110.dns-servicio.com", "varo", "&qdGw743", "6795849_tftesp");
-						$resultado = $enlace->query('select slug, tipo, titular from noticias order by fecha desc');
+						$con = mysqli_connect("PMYSQL110.dns-servicio.com", "varo", "&qdGw743", "6795849_tftesp");
+						mysqli_set_charset($con,'UTF8');
+						$resultado = $con->query('select slug, tipo, titular from noticias order by fecha desc');
 						while($fila = $resultado->fetch_assoc()){
 							echo '<div class="noticia"><a class="linknoticia" href="noticias.php?s='.$fila['slug'].'">['.$fila['tipo'].'] '.$fila['titular'].'</a></div>';
 						}
-						mysqli_close($enlace);
+						$con->close();
 					?>
 				</div>
 			</div>

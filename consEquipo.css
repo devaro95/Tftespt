@@ -63,39 +63,45 @@ body img{
 }
 .caja1-1{
     width: 100%; 
-    height: 13px;
+    height: 12px;
     border-top:solid 1px;
 }
 .caja1-2{
     width: 50%; 
-    height: 13px;
+    height: 12px;
     border-right:solid 1px;
     border-top:solid 1px;
 }
 .caja2-2{
     width: 50%; 
-    height: 13px;
+    height: 12px;
     border-top:solid 1px;
 }
 .caja1-3{
     width: 33%; 
-    height: 13px;
+    height: 12px;
     border-right:solid 1px;
     border-top:solid 1px;
 }
 .caja2-3{
     width: 33%; 
-    height: 13px;
+    height: 12px;
     border-top:solid 1px;
 }
 .caja3-3{
     width: 33%; 
-    height: 13px;
+    height: 12px;
     border-left:solid 1px;
     border-top:solid 1px;
 }
 .cajaDos{
     width: 50%;
+    height: 80px; 
+    margin-right: 10px;
+    border:solid 1px;
+}
+.cajaTres{
+    width: 100%;
     height: 80px; 
     margin-right: 10px;
     border:solid 1px;
