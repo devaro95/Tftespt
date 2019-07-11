@@ -71,7 +71,7 @@ if(isset($_REQUEST['s'])){
 					foreach($arr as $line){
 						if(!strcmp(substr($line,0,3),'###')){
 							print(
-								"<div class='titularnoticias'>
+								"<div class='titularNoticias'>
 								".substr($line,3)."
 								</div>"
 							) ;
