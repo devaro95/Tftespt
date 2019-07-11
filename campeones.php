@@ -65,7 +65,7 @@
 						$resultado = $enlace->query('select * from campeones order by tier');
 						while($fila = $resultado->fetch_assoc()){ ?>
 						<tr>
-							<td><?php echo '<img src="Images/icon-champtier-'.$fila['tier'].'.png" alt="'. $fila['nombre'] .'"/>'?><span class="hidetext"><?php echo $fila['tier']?></span></td>
+							<td><?php echo '<img src="Images/icon-champtier-'.$fila['tier'].'.png" alt="'. $fila['tier'] .'"/>'?><span class="hidetext"><?php echo $fila['tier']?></span></td>
 							<td class="leftside"><?php echo '<img src="static/campeones/'.$fila['id'].'.png" class="champicon" alt="'. $fila['nombre'] .'"/>'?>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $fila['nombre']?></img></td>
 							<td>
