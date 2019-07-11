@@ -35,7 +35,6 @@ function ocultarCaja(arg) {
     caja.style.visibility = "hidden";
 }
 function select(arg) {
-    console.log(arg);
     var img = document.getElementById(arg)
     //Variables para los numeros de cantidad de champs
     var numAsesino = document.getElementById("numAsesino");
@@ -65,7 +64,7 @@ function select(arg) {
     img.style.filter = "grayscale(100%)";
     img.setAttribute("onclick", "deselect('" + arg + "');");
     var seleccionados = document.getElementById("seleccionados");
-    seleccionados.innerHTML += "<img class='imagen grande' id=" + arg + "In src='Images/Campeones/" + arg + ".png'>";
+    seleccionados.innerHTML += "<img class='imagen grande' id=" + arg + "In onclick=deselect('"+arg+"') src='Images/Campeones/" + arg + ".png'>";
     //aumento de contadores clases
     if (arrayAsesinos.indexOf(arg) != -1) {
         asesino++;
