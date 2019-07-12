@@ -23,6 +23,13 @@
 			enable_page_level_ads: true
 		});
 	</script>
+	<script>
+		jQuery(document).ready(function($) {
+    $(".clickable-row").click(function() {
+        window.location = $(this).data("href");
+    });
+});
+	</script>
 </head>
 
 <body id="inicio">
@@ -64,9 +71,10 @@
 						$enlace = mysqli_connect("PMYSQL110.dns-servicio.com", "varo", "&qdGw743", "6795849_tftesp");
 						$resultado = $enlace->query('select * from campeones order by tier');
 						while($fila = $resultado->fetch_assoc()){ ?>
-						<tr>
+						<tr class='clickable-row' data-href="campeon.php?campeon=<?php print $fila['nombre']; ?>">
+							
 							<td><?php echo '<img src="Images/icon-champtier-'.$fila['tier'].'.png" alt="'. $fila['tier'] .'"/>'?><span class="hidetext"><?php echo $fila['tier']?></span></td>
-							<td class="leftside"><?php echo '<a href="campeon.php?campeon='.$fila['nombre'] .'"><img src="static/campeones/'.$fila['id'].'.png" class="champicon" alt="'. $fila['nombre'] .'"/></a>'?>
+							<td class="leftside"><?php echo '<img src="static/campeones/'.$fila['id'].'.png" class="champicon" alt="'. $fila['nombre'] .'"/>'?>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $fila['nombre']?></img></td>
 							<td>
 							<?php 
@@ -99,7 +107,9 @@
 							}
 								
 							?>  
-						</tr>       
+							
+						</tr>
+						
 					<?php
 						}
 						mysqli_close($enlace);

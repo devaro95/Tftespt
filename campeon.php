@@ -4,6 +4,7 @@
     <link rel="shortcut icon" href="/Campeones/img-navi-tft-513c71b5.svg" />
     <link rel="shortcut icon" href="Images/icono.ico" />
     <link rel="stylesheet" type="text/css" href="stylechamps.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
     <?php
         use function PHPSTORM_META\type;
         if(isset($_REQUEST['campeon'])){
@@ -43,7 +44,7 @@
             </a>
         </div>
     </div>
-    <div style="border:solid; width: 60%;height: 700px;margin:auto;margin-top: 3%;color: #c9aa71; background-color: rgb(18,18,18, 0.75); ">
+    <div style="border:solid; min-width: 1150px; width: 60%; height: 600px;margin:auto;margin-top: 3%;color: #c9aa71; background-color: rgb(18,18,18, 0.75); ">
         <div style="border-bottom:solid;height: 110px;margin:auto; padding-top:20px;display: flex;align-items:center; justify-content: center; background-color: rgb(18,18,18); ">
             <div>
             <?php 
@@ -52,10 +53,16 @@
                 ?>
             </div>
             
-            <div style="font-size:100px; margin-left:15px">
+            <div style="font-size:70px; margin-left:15px">
             
                 <?php
                     print $datos['nombre'];
+                    $resultado2 = $con->query('select * from campeones_clases where id_campeon ='. $datos['id']);
+								while($fila2 = $resultado2->fetch_assoc()){
+									$resultado3 = $con->query('select * from clases where id ='. $fila2['id_clase']);
+									$fila3 = $resultado3->fetch_assoc();
+									echo '<img src="static/clases/'.$fila2['id_clase'].'.png" class="oriclasicon" style="margin-left: 5px; width:38px;" title="'.$fila3['nombre'].'" />';
+								}
                 ?>
             </div>
         </div>
@@ -63,11 +70,12 @@
         <?php 
             print 
             "<div style='float: left; background: url(static/campeonesrender/". $datos['id']. ".png) no-repeat center center;
-                 width:40%; height: 567px; background-size: contain;   overflow-y: hidden ! important;
+                 width:40%; height: 460px; background-size: contain;   overflow-y: hidden ! important;
                  overflow-x: hidden ! important;'>           
             </div>";
         ?>
-        <div style="width:58%; float: left; font-size: 25px; margin-left:10px;margin-top:10px;">
+        <div style="width:58%; float: left; height:30px;"></div>
+        <div style="width:58%; float: left; font-size: 20px; margin-left:10px;margin-top:10px;">
                     <u>
                     <?php 
                     print $datos['nombrehabilidad'];
@@ -81,14 +89,14 @@
                     "<img src='static/habilidades/". $datos['id']. ".png' style='width:75px; margin-left:10px;margin-top:10px;' alt=". $datos['nombrehabilidad'] ." />"
                     ?>
                 </div>
-                <div style="width:78%; float: left; margin-left:10px;margin-top:10px; font-size: 18px;">
+                <div style="width:78%; float: left; margin-left:10px;margin-top:10px; font-size: 15px;">
                     <?php 
                     print $datos['descripcionhabilidad'];
                     
                     ?>
                 </div>
-            <div style="width: 670px; float:left;">
-            <table id="campeones" style="width: 670px;">
+            <div style="width: 670px; float:left; overflow-x: hidden ! important;">
+            <table id="campeones2">
 			<thead>
 				<tr>
 					<th style="width:10%">Coste</td>
@@ -129,6 +137,44 @@
 			</tbody>
 		</table>
         </div>
+        <div style="width:58%; float: left; font-size: 20px; margin-left:10px;margin-top:10px;">
+                    <u>
+                    SINERGIAS
+                    </u>
+        </div>
+        <div style="width:670px; height:250px; float: left; margin-top: 10px;">
+        <?php
+                    $resultado2 = $con->query('select * from campeones_clases where id_campeon ='. $datos['id']);
+								while($fila2 = $resultado2->fetch_assoc()){
+									$resultado3 = $con->query('select * from campeones_clases where id_clase ='. $fila2['id_clase'] .' and id_campeon <> ' . $datos['id'] . ' LIMIT 3 ');
+									while($fila3 = $resultado3->fetch_assoc()){
+                                        echo '<img src="static/campeones/'.$fila3['id_campeon'].'.png" class="oriclasicon" style="margin-left: 5px; width:56px;" />';
+                                    }
+								}
+                ?>
+        </div>
         </div>
     </div>
+    <div id="footer" style="margin-top:100px;">
+		<div style="float: left; height:100%; min-width: 415px; ">
+			<div style="min-width: 415px; width: 415px; margin-top:10px; margin-left:10px;"><img
+					src="Images/newlogo.png" style="width:50%">
+			</div>
+			<p1 align="bottom" style=" margin-left: 20px; ">© 2019 www.tftesp.com</p1>
+		</div>
+		<div style="min-width:200px; width: 50%; height: 100%; float:left; text-align:center;">
+			<div style="width:60%; margin:auto; margin-top: 45px;">
+				Teamfight Tactics ESP se creó según la política "Galimatías legal" de Riot Games usando recursos que
+				son propiedad de Riot Games. Riot Games no respalda ni patrocina este proyecto.
+			</div>
+		</div>
+		<div style="float: left; height:100%; width: 10%; min-width:200px;">
+			<div style="margin-top:45px;">Contacto: tftesp@gmail.com <br>
+				<a href="https://twitter.com/TFT_Esp">
+					<img src="Images/twitter.png" style="width:20px; padding-top:8px;">
+				</a>
+
+			</div>
+		</div>
+	</div>
 </body>
