@@ -529,7 +529,8 @@
 									<div style="display: flex;margin-bottom: 20px;">
 										<div><img class="imagenCaja" src="Images/Clases y origenes/Ninja.png">
 										</div>
-										<div>Los Ninjas ganan un porcentaje de daño de ataque.
+										<div>Los Ninjas ganan un porcentaje de daño de ataque. Solo se activa si son
+											exactamente 1 o 4.
 										</div>
 									</div>
 									<div style="margin-left: 30px;">
@@ -574,7 +575,8 @@
 									<div style="display: flex;margin-bottom: 20px;">
 										<div><img class="imagenCaja" src="Images/Clases y origenes/Wild.png">
 										</div>
-										<div>Los ataques de los Salvajes generan cargas de Furia(hasta 5). Cada carga de Furia otorga 7% velocidad de ataque.
+										<div>Los ataques de los Salvajes generan cargas de Furia(hasta 5). Cada carga de
+											Furia otorga 7% velocidad de ataque.
 										</div>
 									</div>
 									<div style="margin-left: 30px;">
@@ -588,7 +590,7 @@
 								</div>
 								<!--Ninja caja-->
 								<div id="Ninja" class="byn caja" title="Ninja" onmouseover="mostrarSinergia(15)"
-								onmouseout="ocultarSinergia(15)">
+									onmouseout="ocultarSinergia(15)">
 									<div class="numCaja">
 										<div id="numNinja" class="numStilo">
 											0</div>
@@ -604,7 +606,7 @@
 								</div>
 								<!--Pirata caja-->
 								<div id="Pirata" class="byn caja" title="Pirata" onmouseover="mostrarSinergia(16)"
-								onmouseout="ocultarSinergia(16)">
+									onmouseout="ocultarSinergia(16)">
 									<div class="numCaja">
 										<div id="numPirata" class="numStilo">
 											0</div>
@@ -619,7 +621,7 @@
 								</div>
 								<!--Yordle caja-->
 								<div id="Yordle" class="byn caja" title="Yordle" onmouseover="mostrarSinergia(17)"
-								onmouseout="ocultarSinergia(17)">
+									onmouseout="ocultarSinergia(17)">
 									<div class="numCaja">
 										<div id="numYordle" class="numStilo">
 											0</div>
@@ -635,7 +637,7 @@
 								</div>
 								<!--Salvaje caja-->
 								<div id="Salvaje" class="byn caja" title="Salvaje" onmouseover="mostrarSinergia(18)"
-								onmouseout="ocultarSinergia(18)">
+									onmouseout="ocultarSinergia(18)">
 									<div class="numCaja">
 										<div id="numSalvaje" class="numStilo">
 											0</div>
@@ -650,9 +652,61 @@
 									</div>
 								</div>
 							</div>
-							<div style="display: flex; margin-top:10px;">
+							<div style="display: flex; margin-top:10px; position: relative">
+								<div id="cajaOculta19" class="cajaOculta">
+									<div style="display: flex;margin-bottom: 20px;">
+										<div><img class="imagenCaja" src="Images/Clases y origenes/Void.png">
+										</div>
+										<div>Los ataques basicos de tu equipo
+											ignoran la armadura enemiga.
+										</div>
+									</div>
+									<div style="margin-left: 30px;">
+										<div style="display: flex">
+											<div class="cajaNumeros">3</div>Ignoran 50% de la armadura.
+										</div>
+									</div>
+								</div>
+								<div id="cajaOculta20" class="cajaOculta">
+									<div style="display: flex;margin-bottom: 20px;">
+										<div><img class="imagenCaja" src="Images/Clases y origenes/Phantom-1.png">
+										</div>
+									</div>
+									<div style="margin-left: 30px;">
+										<div style="display: flex">
+											<div class="cajaNumeros" style="height: 20px;width:20px;">2</div>Maldice a
+											un enemigo aleatorio al principio
+											del combate dejando su vida a
+											100.
+										</div>
+									</div>
+								</div>
+								<div id="cajaOculta21" class="cajaOculta">
+									<div style="display: flex;margin-bottom: 20px;">
+										<div><img class="imagenCaja" src="Images/Clases y origenes/Robot.png">
+										</div>
+									</div>
+									<div style="margin-left: 30px;">
+										<div style="display: flex">
+											<div class="cajaNumeros" style="height: 20px; width:15px;">1</div>Los Robots
+											comienzan el combate con todo el mana.
+										</div>
+									</div>
+								</div>
+								<div id="cajaOculta22" class="cajaOculta">
+									<div style="display: flex;margin-bottom: 20px;">
+										<div><img class="imagenCaja" src="Images/Clases y origenes/Wild.png">
+										</div>
+									</div>
+									<div style="margin-left: 30px;">
+										<div style="display: flex">
+											<div class="cajaNumeros">2</div>Los dragones son inmunes al daño magico.
+										</div>
+									</div>
+								</div>
 								<!--Vacio caja-->
-								<div id="Vacio" class="byn caja" title="Vacio">
+								<div id="Vacio" class="byn caja" title="Vacio" onmouseover="mostrarSinergia(19)"
+									onmouseout="ocultarSinergia(19)">
 									<div class="numCaja">
 										<div id="numVacio" class="numStilo">
 											0</div>
@@ -666,7 +720,8 @@
 									</div>
 								</div>
 								<!--Fantasma caja-->
-								<div id="Fantasma" class="byn caja" title="Fantasma">
+								<div id="Fantasma" class="byn caja" title="Fantasma" onmouseover="mostrarSinergia(20)"
+									onmouseout="ocultarSinergia(20)">
 									<div class="numCaja">
 										<div id="numFantasma" class="numStilo">
 											0</div>
@@ -680,7 +735,8 @@
 									</div>
 								</div>
 								<!--Robot caja-->
-								<div id="Robot" class="byn caja" title="Robot">
+								<div id="Robot" class="byn caja" title="Robot" onmouseover="mostrarSinergia(21)"
+									onmouseout="ocultarSinergia(21)">
 									<div class="numCaja">
 										<div id="numRobot" class="numStilo">
 											0</div>
@@ -694,7 +750,8 @@
 									</div>
 								</div>
 								<!--Dragon caja-->
-								<div id="Dragon" class="byn caja" title="Dragon">
+								<div id="Dragon" class="byn caja" title="Dragon" onmouseover="mostrarSinergia(22)"
+									onmouseout="ocultarSinergia(22)">
 									<div class="numCaja">
 										<div id="numDragon" class="numStilo">
 											0</div>
@@ -708,9 +765,22 @@
 									</div>
 								</div>
 							</div>
-							<div style="display: flex; margin: 10px auto;width: 25%;">
+							<div style="display: flex; margin: 10px auto;width: 25%;position:relative">
+								<div id="cajaOculta23" class="cajaOculta">
+									<div style="display: flex;margin-bottom: 20px;">
+										<div><img class="imagenCaja" src="Images/Clases y origenes/Exile-1.png">
+										</div>
+									</div>
+									<div style="margin-left: 30px;">
+										<div style="display: flex">
+											<div class="cajaNumeros" style="height: 20px; width:15px;">1</div>
+											Si no tiene aliados adyacentes, ganan un escudo igual al 100% de su vida.
+										</div>
+									</div>
+								</div>
 								<!--Exiliado caja-->
-								<div id="Exiliado" class="byn cajaTres" title="Exiliado">
+								<div id="Exiliado" class="byn cajaTres" title="Exiliado" onmouseover="mostrarSinergia(23)"
+								onmouseout="ocultarSinergia(23)">
 									<div class="numCaja">
 										<div id="numExiliado" class="numStilo">0</div>
 									</div>

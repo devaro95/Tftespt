@@ -314,7 +314,10 @@ function select(arg) {
             if (ninja == 1) {
                 div1.style.backgroundColor = "#c9aa71"
             } else if (ninja == 4) {
+                div1.style.backgroundColor = "#c9aa71"
                 div2.style.backgroundColor = "#c9aa71"
+            } else if (ninja != 1 && ninja != 4) {
+                div1.removeAttribute("style");
             }
         }
     } if (arrayPirata.indexOf(arg) != -1) {
@@ -673,11 +676,14 @@ function deselect(arg) {
             clase.classList.remove("seleccionado");
             var div1 = document.getElementById("Ninja1");
             div1.removeAttribute("style");
-        } else if (ninja > 0) {
+        } else if (ninja != 1 && ninja != 4) {
+            var div1 = document.getElementById("Ninja1");
             var div2 = document.getElementById("Ninja2");
-            if (ninja < 4) {
-                div2.removeAttribute("style");
-            }
+            div1.removeAttribute("style");
+            div2.removeAttribute("style");
+        } else if (ninja == 1) {
+            var div1 = document.getElementById("Ninja1");
+            div1.style.backgroundColor = "#c9aa71";
         }
     } if (arrayYordle.indexOf(arg) != -1) {
         yordle--;
