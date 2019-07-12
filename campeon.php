@@ -3,7 +3,7 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="shortcut icon" href="/Campeones/img-navi-tft-513c71b5.svg" />
     <link rel="shortcut icon" href="Images/icono.ico" />
-
+    <link rel="stylesheet" type="text/css" href="stylechamps.css">
     <?php
         use function PHPSTORM_META\type;
         if(isset($_REQUEST['campeon'])){
@@ -87,6 +87,48 @@
                     
                     ?>
                 </div>
+            <div style="width: 670px; float:left;">
+            <table id="campeones" style="width: 670px;">
+			<thead>
+				<tr>
+					<th style="width:10%">Coste</td>
+					<th style="width:7%">Vida</td>
+					<th style="width:7%">Armadura</td>
+					<th style="width:7%">MR</td>
+					<th style="width:7%">DPS</td>
+					<th style="width:7%">Daño</td>
+					<th style="width:7%">Vel. Atq.</td>
+					<th style="width:9%">Rango</td>
+				</tr>
+			</thead>
+			<tbody>                
+						<tr>
+							<td><img src="Images/oro.png" class="oroicon"><?php echo $datos['precio']?></img></td>
+							<td><?php echo $datos['vida']?></td>
+							<td><?php echo $datos['armadura']?></td>
+							<td><?php echo $datos['rm']?></td>
+							<td><?php echo $datos['dps']?></td>
+							<td><?php echo $datos['dano']?></td>
+							<td><?php echo $datos['vda']?></td>
+							<?php
+							if($datos['rango'] == 1){
+								echo '<td style="font-size: 25px"><b style="color:white">|</b>||||<span class="hidetext">'. $datos['rango'] .'</span></td>';
+							}elseif($datos['rango'] == 2){
+								echo '<td style="font-size: 25px"><b style="color:white">||</b>|||<span class="hidetext">'. $datos['rango'] .'</span></td>';
+							}elseif($datos['rango'] == 3){
+								echo '<td style="font-size: 25px"><b style="color:white">|||</b>||<span class="hidetext">'. $datos['rango'] .'</span></td>';
+							}elseif($datos['rango'] == 4){
+								echo '<td style="font-size: 25px"><b style="color:white">||||</b>|<span class="hidetext">'. $datos['rango'] .'</span></td>';
+							}elseif($datos['rango'] == 5){
+								echo '<td style="font-size: 25px"><b style="color:white">|||||</b><span class="hidetext">'. $datos['rango'] .'</span></td>';
+							}
+								
+							?>  
+						</tr>       
+				
+			</tbody>
+		</table>
+        </div>
         </div>
     </div>
 </body>
