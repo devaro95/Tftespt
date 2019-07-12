@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -95,7 +94,7 @@
 					</div>
 				</div>
 				<div id="botleftmenu">
-					<a href="campeones.html">
+					<a href="campeones.php">
 						<div class="title" style="text-align: center">
 							<span class="nametitle">TIER LIST ></span>
 						</div>

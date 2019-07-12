@@ -65,8 +65,8 @@
 						$resultado = $enlace->query('select * from campeones order by tier');
 						while($fila = $resultado->fetch_assoc()){ ?>
 						<tr>
-							<td><?php echo '<img src="Images/icon-champtier-'.$fila['tier'].'.png" alt="'. $fila['nombre'] .'"/>'?><span class="hidetext"><?php echo $fila['tier']?></span></td>
-							<td class="leftside"><?php echo '<img src="static/campeones/'.$fila['id'].'.png" class="champicon" alt="'. $fila['nombre'] .'"/>'?>
+							<td><?php echo '<img src="Images/icon-champtier-'.$fila['tier'].'.png" alt="'. $fila['tier'] .'"/>'?><span class="hidetext"><?php echo $fila['tier']?></span></td>
+							<td class="leftside"><?php echo '<a href="campeon.php?campeon='.$fila['nombre'] .'"><img src="static/campeones/'.$fila['id'].'.png" class="champicon" alt="'. $fila['nombre'] .'"/></a>'?>
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?php echo $fila['nombre']?></img></td>
 							<td>
 							<?php 
@@ -106,25 +106,26 @@
 					?>
 			</tbody>
 		</table>
-		<div id="footer">
-			<div style="float: left; height:100%;  min-width: 415px; ">
-				<div style="width: 415px;  min-width: 415px; margin-top:10px; margin-left:10px;"><img
-						src="Images/newlogo.png" style="width:50%">
-				</div>
-				<p1 align="bottom" style=" margin-left: 40px; ">© 2019 tftesp.com</p1>
+	</div>
+	<div id="footer">
+		<div style="float: left; height:100%; min-width: 415px; ">
+			<div style="min-width: 415px; width: 415px; margin-top:10px; margin-left:10px;"><img
+					src="Images/newlogo.png" style="width:50%">
 			</div>
-			<div style="width: 50%; height: 100%; float:left; text-align:center;">
-				<div style="width:60%; margin:auto; margin-top: 45px;">
-					Teamfight Tactics ESP se creó según la política "Galimatías legal" de Riot Games usando recursos que
-					son propiedad de Riot Games. Riot Games no respalda ni patrocina este proyecto.
-				</div>
+			<p1 align="bottom" style=" margin-left: 20px; ">© 2019 www.tftesp.com</p1>
+		</div>
+		<div style="min-width:200px; width: 50%; height: 100%; float:left; text-align:center;">
+			<div style="width:60%; margin:auto; margin-top: 45px;">
+				Teamfight Tactics ESP se creó según la política "Galimatías legal" de Riot Games usando recursos que
+				son propiedad de Riot Games. Riot Games no respalda ni patrocina este proyecto.
 			</div>
-			<div style="float: left; height:100%; width: 20%; min-width:200px;">
-				<div style="margin-top:45px;">Contacto: tftesp@gmail.com <br>
-					<a href="https://twitter.com/TFT_Esp">
-						<img src="Images/twitter.png" style="width:20px; padding-top:8px;">
-					</a>
-				</div>
+		</div>
+		<div style="float: left; height:100%; width: 10%; min-width:200px;">
+			<div style="margin-top:45px;">Contacto: tftesp@gmail.com <br>
+				<a href="https://twitter.com/TFT_Esp">
+					<img src="Images/twitter.png" style="width:20px; padding-top:8px;">
+				</a>
+
 			</div>
 		</div>
 	</div>
