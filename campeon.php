@@ -43,20 +43,50 @@
             </a>
         </div>
     </div>
-    <div style="border:solid; width: 60%;height: 1000px;margin:auto;margin-top: 3%;color: #c9aa71; background-color: rgb(18,18,18, 0.75); ">
-        <div style="border-bottom:solid;height: 200px;margin:auto; padding-top:20px;display: flex;align-items:center; justify-content: center; background-color: rgb(18,18,18); ">
+    <div style="border:solid; width: 60%;height: 700px;margin:auto;margin-top: 3%;color: #c9aa71; background-color: rgb(18,18,18, 0.75); ">
+        <div style="border-bottom:solid;height: 110px;margin:auto; padding-top:20px;display: flex;align-items:center; justify-content: center; background-color: rgb(18,18,18); ">
             <div>
-                <?php 
+            <?php 
                 print 
-                "<img src='static/campeones/". $datos['id']. ".png' style='width:150px;' alt=". $datos['nombre'] ." />"
+                "<img src='static/campeones/". $datos['id']. ".png' style='width:75px;' alt=". $datos['nombre'] ." />"
                 ?>
             </div>
+            
             <div style="font-size:100px; margin-left:15px">
             
                 <?php
                     print $datos['nombre'];
                 ?>
             </div>
+        </div>
+        
+        <?php 
+            print 
+            "<div style='float: left; background: url(static/campeonesrender/". $datos['id']. ".png) no-repeat center center;
+                 width:40%; height: 567px; background-size: contain;   overflow-y: hidden ! important;
+                 overflow-x: hidden ! important;'>           
+            </div>";
+        ?>
+        <div style="width:58%; float: left; font-size: 25px; margin-left:10px;margin-top:10px;">
+                    <u>
+                    <?php 
+                    print $datos['nombrehabilidad'];
+                    ?>
+                    </u>
+        </div>
+        <div style="width:59%; height:100px; float: left;">
+                <div style="width:15%; float: left;">
+                    <?php 
+                    print 
+                    "<img src='static/habilidades/". $datos['id']. ".png' style='width:75px; margin-left:10px;margin-top:10px;' alt=". $datos['nombrehabilidad'] ." />"
+                    ?>
+                </div>
+                <div style="width:78%; float: left; margin-left:10px;margin-top:10px; font-size: 18px;">
+                    <?php 
+                    print $datos['descripcionhabilidad'];
+                    
+                    ?>
+                </div>
         </div>
     </div>
 </body>
