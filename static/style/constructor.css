@@ -1,0 +1,256 @@
+#consTitle{
+    text-align: center;
+    background-color: rgb(18,18,18); 
+    padding:15px;
+    color: white;
+    font-size: 20px;
+}
+.grande{
+    width: 70px;
+    margin: 37px;
+    cursor: pointer;
+}
+.gris:hover{
+    cursor: pointer;
+    filter: brightness(150%);
+}
+.verde:hover{
+    cursor: pointer;
+    filter: brightness(150%);
+}
+.azul:hover{
+    cursor: pointer;
+    filter: brightness(150%);
+}
+.morado:hover{
+    cursor: pointer;
+    filter: brightness(150%);
+}
+.dorado:hover{
+    cursor: pointer;
+    filter: brightness(150%);
+}
+.byn{
+    filter: brightness(35%);
+}
+.seleccionado{
+    filter: brightness(100%);
+    background-color: rgb(18,18,18);
+}
+body img{
+    width: 35px;
+}
+.caja{
+    width: 25%;
+    height: 84px; 
+    margin-right: 10px;
+    border:solid 1px;
+}
+.numCaja{
+    width: 20%; 
+    text-align: center;
+}
+.numStilo{
+    border-right: solid 1px; 
+    border-bottom: solid 1px;
+}
+.aligCen{
+    text-align: center;
+}
+.espCaja{
+    display: flex; 
+    margin: 10px auto;
+}
+.caja1-1{
+    width: 100%; 
+    height: 12px;
+    border-top:solid 1px;
+}
+.caja1-2{
+    width: 50%; 
+    height: 12px;
+    border-right:solid 1px;
+    border-top:solid 1px;
+}
+.caja2-2{
+    width: 50%; 
+    height: 12px;
+    border-top:solid 1px;
+}
+.caja1-3{
+    width: 33%; 
+    height: 12px;
+    border-right:solid 1px;
+    border-top:solid 1px;
+}
+.caja2-3{
+    width: 33%; 
+    height: 12px;
+    border-top:solid 1px;
+}
+.caja3-3{
+    width: 33%; 
+    height: 12px;
+    border-left:solid 1px;
+    border-top:solid 1px;
+}
+.cajaDos{
+    width: 50%;
+    height: 84px; 
+    margin-right: 10px;
+    border:solid 1px;
+}
+.cajaTres{
+    width: 100%;
+    height: 80px; 
+    margin-right: 10px;
+    border:solid 1px;
+}
+.cajaOculta{
+    position: absolute; 
+    bordeR:solid; 
+    background-color: rgb(18,18,18); 
+    padding: 15px;
+    padding-top: 20px;
+    visibility: hidden;
+    z-index: 1;
+}
+.cajaNumeros{
+    bordeR:solid 1px;
+    width: 15px;
+    text-align: center;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.imagenCaja{
+    width: 40px;
+    margin-top: 10px;
+}
+#cajaOculta1{
+    top:-200px; 
+    width: 600px; 
+}
+#cajaOculta2{
+    top:-200px; 
+    width: 400px; 
+    left: 83px;
+}
+#cajaOculta3{
+    top:-200px; 
+    width: 400px; 
+    left: 165px;
+}
+#cajaOculta4{
+    top:-200px; 
+    width: 400px; 
+    left: 248px;
+}
+#cajaOculta5{
+    top:-150px; 
+    width: 600px; 
+}
+#cajaOculta6{
+    top:-150px; 
+    width: 450px; 
+    left: 83px;
+}
+#cajaOculta7{
+    top:-200px; 
+    width: 400px; 
+    left: 165px;
+}
+#cajaOculta8{
+    top:-200px; 
+    width: 400px; 
+    left: 248px;
+}
+#cajaOculta9{
+    top:-150px; 
+    width: 400px; 
+}
+#cajaOculta10{
+    top:-200px; 
+    width: 400px; 
+    left: 83px;
+}
+#cajaOculta11{
+    top:-200px; 
+    width: 400px; 
+}
+#cajaOculta12{
+    top:-200px; 
+    width: 400px; 
+    left: 83px;
+}
+#cajaOculta13{
+    top:-200px; 
+    width: 400px; 
+    left: 165px;
+}
+#cajaOculta14{
+    top:-200px; 
+    width: 400px; 
+    left: 248px;
+}
+#cajaOculta15{
+    top:-200px; 
+    width: 600px; 
+}
+#cajaOculta16{
+    top:-200px; 
+    width: 400px; 
+    left: 83px;
+}
+#cajaOculta17{
+    top:-200px; 
+    width: 400px; 
+    left: 165px;
+}
+#cajaOculta18{
+    top:-200px; 
+    width: 400px; 
+    left: 248px;
+}
+#cajaOculta19{
+    top:-200px; 
+    width: 500px; 
+}
+#cajaOculta20{
+    top:-200px; 
+    width: 500px; 
+    left: 83px;
+}
+#cajaOculta21{
+    top:-200px; 
+    width: 400px; 
+    left: 165px;
+}
+#cajaOculta22{
+    top:-200px; 
+    width: 400px; 
+    left: 248px;
+}
+#cajaOculta23{
+    top:-200px; 
+    width: 400px; 
+}
+#cajaOculta24{
+    top:-200px; 
+    width: 400px; 
+    left: 165px;
+}
+.dorado{
+    border: solid 3px #e6a42a;
+}
+.azul{
+    border: solid 3px #15129b;
+}
+.gris{
+    border: solid 3px #4b4b4b;
+}
+.morado{
+    border: solid 3px #580a55;
+}
+.verde{
+    border: solid 3px #083d1e;
+}
