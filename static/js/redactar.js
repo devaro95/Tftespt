@@ -20,3 +20,8 @@ function anadir(arg){
         texto.value = texto.value + "[img][/img]";
     }
 }
+function getSelec(){
+    var algo = document.getSelection();
+    texto = document.getElementById("texto");
+    texto.value = algo;
+}

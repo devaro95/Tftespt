@@ -139,7 +139,7 @@
 							Titular <p><input id="titular" type="text" name="titular" maxlength="38" required></p>
 							Noticia<p>
 								<div>
-									<span onclick='anadir(0)' class="fas fa-heading" title="Titulo">
+									<span onclick='getSelec()' class="fas fa-heading" title="Titulo">
 									</span>
 									<span onclick='anadir(1)' class="fas fa-bold" title="Negrita">
 									</span>
