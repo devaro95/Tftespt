@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -13,6 +14,14 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 	<script type=" text/javascript" src="static/js/redactar.js"></script>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script src="https://cdn.tiny.cloud/1/ly9vdm5lktddv34vjkv3up6n997rg9w0ogd3ancdhk8g1tqp/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+	<script>
+  tinymce.init({
+		selector: '#mytextarea',
+		plugins: "image link",
+		menubar: "insert link",
+	});
+  </script>
 	<script>
 		(adsbygoogle = window.adsbygoogle || []).push({
 			google_ad_client: "ca-pub-3261656417999696",
@@ -132,31 +141,15 @@
 		
 		<div id="menu" style="margin-top:20px;">
 			<div id="menuNoticias">
-				<div style="background-image: url('static/originales/fondonoticia.png'); border: 2px solid black;color: black;font-weight:bold">
+				<div style="background-image: url('static/originales/fondonoticia.png'); border: 2px solid black;color: black;">
 					<div style="width: 95%;margin:auto; text-align:center">
 						<form enctype="multipart/form-data" action="redactores.php" method="POST">
 							<br>
 							Titular <p><input id="titular" type="text" name="titular" maxlength="38" required></p>
 							Noticia<p>
-								<div>
-									<span onclick='getSelec()' class="fas fa-heading" title="Titulo">
-									</span>
-									<span onclick='anadir(1)' class="fas fa-bold" title="Negrita">
-									</span>
-									<span onclick='anadir(2)' class="fas fa-italic" title="Cursiva">
-									</span>
-									<span onclick='anadir(3)' class="fas fa-underline" title="Subrayado">
-									</span>
-									<span onclick='anadir(4)' class="fas fa-align-left" title="Alinear izquierda">
-									</span>
-									<span onclick='anadir(5)' class="fas fa-align-center" title="Alinear centro">
-									</span>
-									<span onclick='anadir(6)' class="fas fa-align-right" title="Alinear derecha"></span>
-									<span onclick='anadir(7)' class="fas fa-link" title="Enlace"></span>
-									<span onclick='anadir(8)' class="far fa-image" title="Añadir imagen"></span>
-								</div>
-								<textarea id="texto" type="text" name="noticia"
-									style="resize:none;height:400px;font-size:18px;" cols="70" required></textarea>
+							<textarea id="mytextarea" name="noticia"></textarea>
+								
+								
 							</p>
 							Tipo Noticia [ ] <p><input id="texto" type="text" name="tipo" maxlength="28" required></p>
 							Foto encabezado<br><br>
