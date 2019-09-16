@@ -1,0 +1,1065 @@
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8" />
+	<link rel="shortcut icon" href="static/originales/icono.ico" />
+	<meta name="description" content="¡Aquí encontrarás toda la información que necesitas sobre Teamfight Tactics!" />
+	<link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="static/style/style.css?n=1">
+	<link rel="stylesheet" type="text/css" href="static/style/constructor.css?n=1">
+	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+	<script type=" text/javascript" src="static/js/javascriptIndex.js"></script>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+	<script>
+		(adsbygoogle = window.adsbygoogle || []).push({
+			google_ad_client: "ca-pub-3261656417999696",
+			enable_page_level_ads: true
+		});
+	</script>
+	<title>Constructor - TFTESP</title>
+	<link rel="shortcut icon" href="static/originales/logoblanco.png" />
+	<link rel="stylesheet" type="text/css" href="static/style/constructor.css">
+	<script type="text/javascript" src="static/js/constructor.js"></script>
+	
+	<meta http-equiv='cache-control' content='no-cache'>
+	<meta http-equiv='expires' content='0'>
+	<meta http-equiv='pragma' content='no-cache'>
+</head>
+
+<body id="inicio">
+	<div style="display: block;">
+		<div style="margin:auto; width:65%">
+			<div style="display:flex;">
+				<a href="https://twitter.com/TFT_Esp">
+					<div id="rightbar"><img src="static/originales/twitter.png" style="width:18px; padding-top:18px;">
+					</div>
+				</a>
+				<a href="https://www.instagram.com/tftesp/">
+					<div id="rightbar"><img src="static/originales/instagram.png" style="width:34px; padding-top:8px;">
+					</div>
+				</a>
+			</div>
+			<div style="text-align:center; margin-bottom:15px;">
+
+				<a href="index.php">
+					<img src="static/originales/logo.png" style="width:180px">
+				</a>
+			</div>
+			<div style="text-align:center;margin-bottom:20px;">
+				<b style="font-size:18px;">
+					<font style="color:#c9aa71; ">TEAMFIGHT TACTICS</font> EN ESPAÑOL
+				</b>
+			</div>
+		</div>
+		<div id="navbar">
+			<div id="midbar">
+				<a class="navbarlink" href="index">INICIO</a>
+				<a class="navbarlink" href="campeones">CAMPEONES</a>
+				<a class="navbarlink" href="objetos">OBJETOS</a>
+				<a class="navbarlink" href="clases">CLASES Y ORIGENES</a>
+				<a class="navbarlink" href="composiciones">COMPOSICIONES</a>
+				<a class="navbarlink" style="color:#c9aa71!important" href="constructor">CONSTRUCTOR DE EQUIPO</a>
+				<a class="navbarlink" href="tabladelideres">RANKING</a>
+			</div>
+
+			<a href="https://tftesp.com/noticia.php?s=notas-parche917">
+				<div id="rightbar" style="padding-top:21px; font-size:15px;"><u>Parche: 9.17</u></div>
+			</a>
+		</div>
+		<div style="min-width:1200px;width:65%;min-height: 1100px; border:solid black; margin:3% auto; background: white ">
+			<div id="consTitle" style="border-bottom: solid black">
+				CONSTRUCTOR DE EQUIPO
+			</div>
+			<div style="width:1200px; margin: 1% auto;display: flex;  color: white;padding: 1%;">
+				<div style="width: 61%;margin:0 auto; min-height: 90%;">
+					<div id="seleccionados"
+						style="width: 100%;min-height: 500px; border:solid  black; margin-bottom: 20px; ">
+					</div>
+					<div style="display: flex; width: 100%;">
+						<div style="width:45%; margin-left:auto;">
+							<div id="consTitle">
+								CLASES
+							</div>
+							<div style="margin: 10px 0px;">
+								<div style="display: flex; position: relative">
+									<div id="cajaOculta1" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/3.png"></div>
+											<div>Los Asesinos saltan al enemigo más lejano al comienzo del combate y
+												hacen
+												daño
+												crítico
+												adicional.
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="display: flex">
+												<div class="cajaNumeros">3</div>+70% daño crítico / 10% probabilidad
+												impacto crítico.
+											</div>
+											<div style="display: flex">
+												<div class="cajaNumeros">6</div>+150% daño crítico / 25% probabilidad
+												impacto crítico.
+											</div>
+										</div>
+									</div>
+									<div id="cajaOculta2" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/1.png"></div>
+											<div>Los Luchadores reciben un bonus de vida máxima.
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="display: flex">
+												<div class="cajaNumeros">2</div>+250 bonus de vida.
+											</div>
+											<div style="display: flex">
+												<div class="cajaNumeros">4</div>+500 bonus de vida.
+											</div>
+											<div style="display: flex">
+												<div class="cajaNumeros">6</div>+900 bonus de vida.
+											</div>
+										</div>
+									</div>
+									<div id="cajaOculta3" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/4.png"></div>
+											<div>Los Cazadores tienen una probabilidad de doblar su velocidad de ataque
+												durante 3
+												segundos.
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="display: flex">
+												<div class="cajaNumeros">2</div>30% de probabilidad.
+											</div>
+											<div style="display: flex">
+												<div class="cajaNumeros">4</div>70% de probabilidad.
+											</div>
+										</div>
+									</div>
+									<div id="cajaOculta4" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/2.png">
+											</div>
+											<div>Los espadachines tienen un 35% de probabilidad de realizar golpes
+												adicionales
+												cada ataque.
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="display: flex">
+												<div class="cajaNumeros">3</div>Un golpe adicional.
+											</div>
+											<div style="display: flex">
+												<div class="cajaNumeros">6</div>Dos golpes adicionales.
+											</div>
+											<div style="display: flex">
+												<div class="cajaNumeros">9</div>Cuatro golpes adicionales.
+											</div>
+										</div>
+									</div>
+									<!--Asesino caja-->
+									<div id="Asesino" class="byn caja" title="Asesino" onmouseover="mostrarSinergia(1)"
+										onmouseout="ocultarSinergia(1)">
+										<div class="numCaja">
+											<div id="numAsesino" class="numStilo">
+												0</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/3.png">
+										</div>
+										<div class="espCaja">
+											<div id="Asesino1" class="caja1-2">
+											</div>
+											<div id="Asesino2" class="caja2-2"></div>
+										</div>
+									</div>
+									<!--Luchador caja-->
+									<div id="Luchador" class="byn caja" title="Luchador"
+										onmouseover="mostrarSinergia(2)" onmouseout="ocultarSinergia(2)">
+										<div class="numCaja">
+											<div id="numLuchador" class="numStilo">0</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/1.png">
+										</div>
+										<div class="espCaja">
+											<div id="Luchador1" class="caja1-3">
+											</div>
+											<div id="Luchador2" class="caja2-3"></div>
+											<div id="Luchador3" class="caja3-3"></div>
+										</div>
+									</div>
+									<!--Cazador caja-->
+									<div id="Cazador" class="byn caja" title="Cazador" onmouseover="mostrarSinergia(3)"
+										onmouseout="ocultarSinergia(3)">
+										<div class="numCaja">
+											<div id="numCazador" class="numStilo">
+												0</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/4.png">
+										</div>
+										<div class="espCaja">
+											<div id="Cazador1" class="caja1-2">
+											</div>
+											<div id="Cazador2" class="caja2-2"></div>
+										</div>
+									</div>
+									<!--Espadachin caja-->
+									<div id="Espadachin" class="byn caja" title="Espadachin"
+										onmouseover="mostrarSinergia(4)" onmouseout="ocultarSinergia(4)">
+										<div class="numCaja">
+											<div id="numEspadachin" class="numStilo">0</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/2.png">
+										</div>
+										<div class="espCaja">
+											<div id="Espadachin1" class="caja1-3">
+											</div>
+											<div id="Espadachin2" class="caja2-3"></div>
+											<div id="Espadachin3" class="caja3-3"></div>
+										</div>
+									</div>
+								</div>
+
+								<div style="display: flex; margin-top: 10px; position: relative">
+									<div id="cajaOculta5" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/5.png">
+											</div>
+											<div>Los Elementalistas ganan el doble de mana por ataques.
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="display: flex">
+												<div class="cajaNumeros">3</div>Al comienzo del combate, invoca un
+												elementalista.
+											</div>
+										</div>
+									</div>
+									<div id="cajaOculta6" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/7.png">
+											</div>
+											<div>Los cambiaformas ganan un bonus de vida maxima cuando se transforman.
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="display: flex">
+												<div class="cajaNumeros">3</div>+60% bonus de vida máxima.
+											</div>
+											<div style="display: flex">
+												<div class="cajaNumeros">6</div>+120% bonus de vida máxima.
+											</div>
+										</div>
+									</div>
+									<div id="cajaOculta7" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/6.png">
+											</div>
+											<div>Los caballeros bloquean daño de ataques básicos.
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="display: flex">
+												<div class="cajaNumeros">2</div>15 de daño bloqueado.
+											</div>
+											<div style="display: flex">
+												<div class="cajaNumeros">4</div>30 de daño bloqueado.
+											</div>
+											<div style="display: flex">
+												<div class="cajaNumeros">6</div>55 de daño bloqueado.
+											</div>
+										</div>
+									</div>
+									<div id="cajaOculta8" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/8.png">
+											</div>
+											<div>Los hechiceros ganan el doble de mana con ataques basicos y los aliados
+												tienen poder de habilidad incrementado.
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="display: flex">
+												<div class="cajaNumeros">3</div>+40% poder de habilidad.
+											</div>
+											<div style="display: flex">
+												<div class="cajaNumeros">6</div>+100% poder de habilidad.
+											</div>
+										</div>
+									</div>
+									<!--Elementalistas caja-->
+									<div id="Elementalista" class="byn caja" title="Elementalista"
+										onmouseover="mostrarSinergia(5)" onmouseout="ocultarSinergia(5)">
+										<div class="numCaja">
+											<div id="numElem" class="numStilo">0
+											</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/5.png">
+										</div>
+										<div class="espCaja">
+											<div id="Elem1" class="caja1-1"></div>
+										</div>
+									</div>
+									<!--Cambiaformas caja-->
+									<div id="Cambiaformas" class="byn caja" title="Cambiaformas"
+										onmouseover="mostrarSinergia(6)" onmouseout="ocultarSinergia(6)">
+										<div class="numCaja">
+											<div id="numCam" class="numStilo">0
+											</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/7.png">
+										</div>
+										<div class="espCaja">
+											<div id="Cam1" class="caja1-2"></div>
+											<div id="Cam2" class="caja2-2"></div>
+										</div>
+									</div>
+									<!--Caballero caja-->
+									<div id="Caballero" class="byn caja" title="Caballero"
+										onmouseover="mostrarSinergia(7)" onmouseout="ocultarSinergia(7)">
+										<div class="numCaja">
+											<div id="numCaballero" class="numStilo">0</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/6.png">
+										</div>
+										<div class="espCaja">
+											<div id="Caballero1" class="caja1-3">
+											</div>
+											<div id="Caballero2" class="caja2-3">
+											</div>
+											<div id="Caballero3" class="caja3-3">
+											</div>
+										</div>
+									</div>
+									<!--Hechicero caja-->
+									<div id="Hechicero" class="byn caja" title="Hechicero"
+										onmouseover="mostrarSinergia(8)" onmouseout="ocultarSinergia(8)">
+										<div class="numCaja">
+											<div id="numHechicero" class="numStilo">0</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/8.png">
+										</div>
+										<div class="espCaja">
+											<div id="Hechicero1" class="caja1-2">
+											</div>
+											<div id="Hechicero2" class="caja2-2">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div style="display: flex; width: 50%; margin: 10px auto; position: relative">
+									<div id="cajaOculta9" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/9.png">
+											</div>
+											<div>Los protectores otorgan armadura a ellos mismos y a los aliados
+												cercanos.
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="display: flex">
+												<div class="cajaNumeros">2</div>+50 de armadura.
+											</div>
+										</div>
+									</div>
+									<div id="cajaOculta10" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/10.png">
+											</div>
+											<div>Después de atacar, los Pistoleros obtienen 50% de probabilidad de
+												disparar
+												ataques adicionales.
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="display: flex">
+												<div class="cajaNumeros">2</div>Ataca a un enemigo aleatorio.
+											</div>
+											<div style="display: flex">
+												<div class="cajaNumeros">4</div>Ataca a dos enemigos aleatorios.
+											</div>
+											<div style="display: flex">
+												<div class="cajaNumeros">6</div>Ataca a tres enemigos aleatorios.
+											</div>
+										</div>
+									</div>
+									<!--Protector caja-->
+									<div id="Protector" class="byn cajaDos" title="Protector"
+										onmouseover="mostrarSinergia(9)" onmouseout="ocultarSinergia(9)">
+										<div class="numCaja">
+											<div id="numProtector" class="numStilo">0</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/9.png">
+										</div>
+										<div class="espCaja">
+											<div id="Protector1" class="caja1-1"></div>
+										</div>
+									</div>
+									<!--Pistolero caja-->
+									<div id="Pistolero" class="byn cajaDos" title="Pistolero"
+										onmouseover="mostrarSinergia(10)" onmouseout="ocultarSinergia(10)">
+										<div class="numCaja">
+											<div id="numPistolero" class="numStilo">0</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/10.png">
+										</div>
+										<div class="espCaja">
+											<div id="Pistolero1" class="caja1-3">
+											</div>
+											<div id="Pistolero2" class="caja2-3">
+											</div>
+											<div id="Pistolero3" class="caja3-3">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div style="width:45%; margin:auto;">
+							<div id="consTitle">
+								ORIGENES
+							</div>
+							<div style="margin: 10px 0px;">
+								<div style="display: flex; position: relative">
+									<div id="cajaOculta11" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/11.png">
+											</div>
+											<div>Los nobles ganan +50 de armadura y resistencia mágica / Se curan 25 con
+												cada golpe.
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="display: flex">
+												<div class="cajaNumeros">3</div>Un alidao aleatorio.
+											</div>
+											<div style="display: flex">
+												<div class="cajaNumeros">6</div>Todos los aliados.
+											</div>
+										</div>
+									</div>
+									<div id="cajaOculta12" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/12.png">
+											</div>
+											<div>Los ataques de Demonios tienen probabilidad de robar el mana del
+												enemigo.
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="display: flex">
+												<div class="cajaNumeros">2</div>15 de mana robado.
+											</div>
+											<div style="display: flex">
+												<div class="cajaNumeros">4</div>30 de mana robado.
+											</div>
+											<div style="display: flex">
+												<div class="cajaNumeros">6</div>45 de mana robado.
+											</div>
+										</div>
+									</div>
+									<div id="cajaOculta13" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/13.png">
+											</div>
+											<div>Los imperiales hacen el doble de daño.
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="display: flex">
+												<div class="cajaNumeros">2</div>Un imperial aleatorio.
+											</div>
+											<div style="display: flex">
+												<div class="cajaNumeros">4</div>Todos los imperiales.
+											</div>
+										</div>
+									</div>
+									<div id="cajaOculta14" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/14.png">
+											</div>
+											<div>Con cada ataque, los Glaciales tienen una probabilidad de aturdir
+												durante
+												2.
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="display: flex">
+												<div class="cajaNumeros">2</div>20% probabilidad.
+											</div>
+											<div style="display: flex">
+												<div class="cajaNumeros">4</div>30% probabilidad.
+											</div>
+											<div style="display: flex">
+												<div class="cajaNumeros">6</div>45% probabilidad.
+											</div>
+										</div>
+									</div>
+									<!--Noble caja-->
+									<div id="Noble" class="byn caja" title="Noble" onmouseover="mostrarSinergia(11)"
+										onmouseout="ocultarSinergia(11)">
+										<div class="numCaja">
+											<div id="numNoble" class="numStilo">
+												0</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/11.png">
+										</div>
+										<div class="espCaja">
+											<div id="Noble1" class="caja1-2">
+											</div>
+											<div id="Noble2" class="caja2-2"></div>
+										</div>
+									</div>
+									<!--Demonio caja-->
+									<div id="Demonio" class="byn caja" title="Demonio" onmouseover="mostrarSinergia(12)"
+										onmouseout="ocultarSinergia(12)">
+										<div class="numCaja">
+											<div id="numDemonio" class="numStilo">
+												0</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/12.png">
+										</div>
+										<div class="espCaja">
+											<div id="Demonio1" class="caja1-3">
+											</div>
+											<div id="Demonio2" class="caja2-3"></div>
+											<div id="Demonio3" class="caja3-3"></div>
+										</div>
+									</div>
+									<!--Imperial caja-->
+									<div id="Imperial" class="byn caja" title="Imperial"
+										onmouseover="mostrarSinergia(13)" onmouseout="ocultarSinergia(13)">
+										<div class="numCaja">
+											<div id="numImperial" class="numStilo">
+												0</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/13.png">
+										</div>
+										<div class="espCaja">
+											<div id="Imperial1" class="caja1-2">
+											</div>
+											<div id="Imperial2" class="caja2-2"></div>
+										</div>
+									</div>
+									<!--Glacial caja-->
+									<div id="Glacial" class="byn caja" title="Glacial" onmouseover="mostrarSinergia(14)"
+										onmouseout="ocultarSinergia(14)">
+										<div class="numCaja">
+											<div id="numGlacial" class="numStilo">
+												0</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/14.png">
+										</div>
+										<div class="espCaja">
+											<div id="Glacial1" class="caja1-3">
+											</div>
+											<div id="Glacial2" class="caja2-3"></div>
+											<div id="Glacial3" class="caja3-3"></div>
+										</div>
+									</div>
+								</div>
+								<div style="display: flex; margin-top:10px; position: relative">
+									<div id="cajaOculta15" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/15.png">
+											</div>
+											<div>Los Ninjas ganan un porcentaje de daño de ataque y poder de habilidad.
+												Solo se activa si son
+												exactamente 1 o 4.
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="display: flex">
+												<div class="cajaNumeros">2</div>Un Ninja +50 daño de ataque y poder de
+												habilidad.
+											</div>
+											<div style="display: flex">
+												<div class="cajaNumeros">4</div>Todos los Ninjas +70 daño de ataque y
+												poder de habilidad.
+											</div>
+										</div>
+									</div>
+									<div id="cajaOculta16" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/16.png">
+											</div>
+											<div>Los piratas tienen posibilidad de darte oro adicional al final del
+												combate.
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="display: flex">
+												<div class="cajaNumeros">3</div>Gana hasta 4 de oro.
+											</div>
+										</div>
+									</div>
+									<div id="cajaOculta17" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/17.png">
+											</div>
+											<div>Los ataques contra los Yordles aliados tienen probabilidad de fallar.
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="display: flex">
+												<div class="cajaNumeros">3</div>35% de probabilidad de fallar.
+											</div>
+											<div style="display: flex">
+												<div class="cajaNumeros">6</div>60% de probabilidad de fallar.
+											</div>
+										</div>
+									</div>
+									<div id="cajaOculta18" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/18.png">
+											</div>
+											<div>Los ataques de los Salvajes generan cargas de Furia(hasta 5). Cada
+												carga de
+												Furia otorga 12% velocidad de ataque.
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="display: flex">
+												<div class="cajaNumeros">2</div>Solo los salvajes aliados.
+											</div>
+											<div style="display: flex">
+												<div class="cajaNumeros">4</div>Todos los aliados.
+											</div>
+										</div>
+									</div>
+									<!--Ninja caja-->
+									<div id="Ninja" class="byn caja" title="Ninja" onmouseover="mostrarSinergia(15)"
+										onmouseout="ocultarSinergia(15)">
+										<div class="numCaja">
+											<div id="numNinja" class="numStilo">
+												0</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/15.png">
+										</div>
+										<div class="espCaja">
+											<div id="Ninja1" class="caja1-2">
+											</div>
+											<div id="Ninja2" class="caja2-2"></div>
+										</div>
+									</div>
+									<!--Pirata caja-->
+									<div id="Pirata" class="byn caja" title="Pirata" onmouseover="mostrarSinergia(16)"
+										onmouseout="ocultarSinergia(16)">
+										<div class="numCaja">
+											<div id="numPirata" class="numStilo">
+												0</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/16.png">
+										</div>
+										<div class="espCaja">
+											<div id="Pirata1" class="caja1-1">
+											</div>
+										</div>
+									</div>
+									<!--Yordle caja-->
+									<div id="Yordle" class="byn caja" title="Yordle" onmouseover="mostrarSinergia(17)"
+										onmouseout="ocultarSinergia(17)">
+										<div class="numCaja">
+											<div id="numYordle" class="numStilo">
+												0</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/17.png">
+										</div>
+										<div class="espCaja">
+											<div id="Yordle1" class="caja1-2">
+											</div>
+											<div id="Yordle2" class="caja2-2"></div>
+										</div>
+									</div>
+									<!--Salvaje caja-->
+									<div id="Salvaje" class="byn caja" title="Salvaje" onmouseover="mostrarSinergia(18)"
+										onmouseout="ocultarSinergia(18)">
+										<div class="numCaja">
+											<div id="numSalvaje" class="numStilo">
+												0</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/18.png">
+										</div>
+										<div class="espCaja">
+											<div id="Salvaje1" class="caja1-2">
+											</div>
+											<div id="Salvaje2" class="caja2-2"></div>
+										</div>
+									</div>
+								</div>
+								<div style="display: flex; margin-top:10px; position: relative">
+									<div id="cajaOculta19" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/19.png">
+											</div>
+											<div>
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="display: flex">
+												<div class="cajaNumeros">3</div>Los campeones del vacío hacen daño
+												verdadero.
+											</div>
+										</div>
+									</div>
+									<div id="cajaOculta20" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/20.png">
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="display: flex">
+												<div class="cajaNumeros" style="height: 20px;width:20px;">2</div>Maldice
+												a
+												un enemigo aleatorio al principio
+												del combate dejando su vida a
+												100.
+											</div>
+										</div>
+									</div>
+									<div id="cajaOculta21" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/21.png">
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="display: flex">
+												<div class="cajaNumeros" style="height: 20px; width:15px;">1</div>Los
+												Robots
+												comienzan el combate con todo el mana.
+											</div>
+										</div>
+									</div>
+									<div id="cajaOculta22" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/22.png">
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="display: flex">
+												<div class="cajaNumeros">2</div>Los dragones tienen un 83% de
+												resistencia al daño mágico.
+											</div>
+										</div>
+									</div>
+									<!--Vacio caja-->
+									<div id="Vacio" class="byn caja" title="Vacio" onmouseover="mostrarSinergia(19)"
+										onmouseout="ocultarSinergia(19)">
+										<div class="numCaja">
+											<div id="numVacio" class="numStilo">
+												0</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/19.png">
+										</div>
+										<div class="espCaja">
+											<div id="Vacio1" class="caja1-1">
+											</div>
+										</div>
+									</div>
+									<!--Fantasma caja-->
+									<div id="Fantasma" class="byn caja" title="Fantasma"
+										onmouseover="mostrarSinergia(20)" onmouseout="ocultarSinergia(20)">
+										<div class="numCaja">
+											<div id="numFantasma" class="numStilo">
+												0</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/20.png">
+										</div>
+										<div class="espCaja">
+											<div id="Fantasma1" class="caja1-1">
+											</div>
+										</div>
+									</div>
+									<!--Robot caja-->
+									<div id="Robot" class="byn caja" title="Robot" onmouseover="mostrarSinergia(21)"
+										onmouseout="ocultarSinergia(21)">
+										<div class="numCaja">
+											<div id="numRobot" class="numStilo">
+												0</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/21.png">
+										</div>
+										<div class="espCaja">
+											<div id="Robot1" class="caja1-1">
+											</div>
+										</div>
+									</div>
+									<!--Dragon caja-->
+									<div id="Dragon" class="byn caja" title="Dragon" onmouseover="mostrarSinergia(22)"
+										onmouseout="ocultarSinergia(22)">
+										<div class="numCaja">
+											<div id="numDragon" class="numStilo">
+												0</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/22.png">
+										</div>
+										<div class="espCaja">
+											<div id="Dragon1" class="caja1-1">
+											</div>
+										</div>
+									</div>
+								</div>
+								<div style="display: flex; margin: 10px auto;width: 50%;position:relative">
+									<div id="cajaOculta23" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/23.png">
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="display: flex">
+												<div class="cajaNumeros" style="height: 20px; width:15px;">1</div>
+												Si no tiene aliados adyacentes, ganan un escudo igual al 100% de su
+												vida.
+											</div>
+										</div>
+									</div>
+									<!--Exiliado caja-->
+									<div id="Exiliado" class="byn caja" title="Exiliado" style="width:50%"
+										onmouseover="mostrarSinergia(23)" onmouseout="ocultarSinergia(23)">
+										<div class="numCaja">
+											<div id="numExiliado" class="numStilo">0</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/23.png">
+										</div>
+										<div class="espCaja">
+											<div id="Exiliado1" class="caja1-1">
+											</div>
+										</div>
+									</div>
+									<div id="cajaOculta24" class="cajaOculta">
+										<div style="display: flex;margin-bottom: 20px;">
+											<div><img class="imagenCaja" src="static/clases/24.png">
+											</div>
+											<div>Lanzan una bomba a un enemigo con objetos y deshabilita todos los
+												objetos del campeón y sus adyacentes
+											</div>
+										</div>
+										<div style="margin-left: 30px;">
+											<div style="margin-left: 30px;">
+												<div style="display: flex">
+													<div class="cajaNumeros">2</div>Lanzan 1 bomba.
+												</div>
+												<div style="display: flex">
+													<div class="cajaNumeros">4</div>Lanzan 2 bombas.
+												</div>
+											</div>
+										</div>
+									</div>
+									<!--Hextech caja-->
+									<div id="Hextech" class="byn caja" title="Hextech" style="width:50%"
+										onmouseover="mostrarSinergia(24)" onmouseout="ocultarSinergia(24)">
+										<div class="numCaja">
+											<div id="numHextech" class="numStilo">0</div>
+										</div>
+										<div class="aligCen">
+											<img src="static/clases/24.png">
+										</div>
+										<div class="espCaja">
+											<div id="Hextech1" class="caja1-2">
+											</div>
+											<div id="Hextech2" class="caja2-2">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style="width: 30%; border:solid  black;margin:0 auto; height: 90%;padding: 10px">
+					<div>COSTE 1</div>
+					<div style="margin: 10px 0">
+						<img id="Nidalee" onclick="select('Nidalee', 'gris')" src="static/campeones/12.png"
+							style="width: 50px" class="gris">
+						<img id="Darius" onclick="select('Darius')" src="static/campeones/17.png" style="width: 50px"
+							class="gris">
+						<img id="Garen" onclick="select('Garen')" src="static/campeones/19.png" style="width: 50px"
+							class="gris">
+						<img id="Graves" onclick="select('Graves')" src="static/campeones/20.png" style="width: 50px"
+							class="gris">
+						<img id="Kassadin" onclick="select('Kassadin')" src="static/campeones/22.png"
+							style="width: 50px" class="gris">
+						<img id="Khazix" onclick="select('Khazix')" src="static/campeones/25.png" style="width: 50px"
+							class="gris">
+						<img id="Tristana" onclick="select('Tristana')" src="static/campeones/31.png"
+							style="width: 50px" class="gris">
+						<img id="Vayne" onclick="select('Vayne')" src="static/campeones/32.png" style="width: 50px"
+							class="gris">
+						<img id="Warwick" onclick="select('Warwick')" src="static/campeones/35.png" style="width: 50px"
+							class="gris">
+						<img id="Fiora" onclick="select('Fiora')" src="static/campeones/46.png" style="width: 50px"
+							class="gris">
+						<img id="Mordekaiser" onclick="select('Mordekaiser')" src="static/campeones/48.png"
+							style="width: 50px" class="gris">
+						<img id="Camille" onclick="select('Camille')" src="static/campeones/52.png" style="width: 50px"
+							class="gris">
+					</div>
+					<div>COSTE 2</div>
+					<div style="margin: 10px 0">
+						<img id="Pyke" onclick="select('Pyke')" src="static/campeones/13.png" style="width: 50px"
+							class="verde">
+						<img id="Ahri" onclick="select('Ahri')" src="static/campeones/16.png" style="width: 50px"
+							class="verde">
+						<img id="Elise" onclick="select('Elise')" src="static/campeones/18.png" style="width: 50px"
+							class="verde">
+						<img id="Lissandra" onclick="select('Lissandra')" src="static/campeones/27.png"
+							style="width: 50px" class="verde">
+						<img id="Lulu" onclick="select('Lulu')" src="static/campeones/28.png" style="width: 50px"
+							class="verde">
+						<img id="Zed" onclick="select('Zed')" src="static/campeones/36.png" style="width: 50px"
+							class="verde">
+						<img id="Blitzcrank" onclick="select('Blitzcrank')" src="static/campeones/38.png"
+							style="width: 50px" class="verde">
+						<img id="Lucian" onclick="select('Lucian')" src="static/campeones/41.png" style="width: 50px"
+							class="verde">
+						<img id="Shen" onclick="select('Shen')" src="static/campeones/43.png" style="width: 50px"
+							class="verde">
+						<img id="Varus" onclick="select('Varus')" src="static/campeones/44.png" style="width: 50px"
+							class="verde">
+						<img id="RekSai" onclick="select('RekSai')" src="static/campeones/50.png" style="width: 50px"
+							class="verde">
+						<img id="Braum" onclick="select('Braum')" src="static/campeones/39.png" style="width: 50px"
+							class="verde">
+						<img id="Jayce" onclick="select('Jayce')" src="static/campeones/53.png" style="width: 50px"
+							class="verde">
+						<img id="Twisted" onclick="select('Twisted')" src="static/campeones/TwistedFate.png"
+							style="width: 50px" class="verde">
+					</div>
+					<div>COSTE 3</div>
+					<div style="margin: 10px 0">
+						<img id="Ashe" onclick="select('Ashe')" src="static/campeones/15.png" style="width: 50px"
+							class="azul">
+						<img id="Kennen" onclick="select('Kennen')" src="static/campeones/24.png" style="width: 50px"
+							class="azul">
+						<img id="Morgana" onclick="select('Morgana')" src="static/campeones/29.png" style="width: 50px"
+							class="azul">
+						<img id="Shyvana" onclick="select('Shyvana')" src="static/campeones/30.png" style="width: 50px"
+							class="azul">
+						<img id="Veigar" onclick="select('Veigar')" src="static/campeones/33.png" style="width: 50px"
+							class="azul">
+						<img id="Volibear" onclick="select('Volibear')" src="static/campeones/34.png"
+							style="width: 50px" class="azul">
+						<img id="Aatrox" onclick="select('Aatrox')" src="static/campeones/37.png" style="width: 50px"
+							class="azul">
+						<img id="Katarina" onclick="select('Katarina')" src="static/campeones/40.png"
+							style="width: 50px" class="azul">
+						<img id="Rengar" onclick="select('Rengar')" src="static/campeones/42.png" style="width: 50px"
+							class="azul">
+						<img id="Evelynn" onclick="select('Evelynn')" src="static/campeones/45.png" style="width: 50px"
+							class="azul">
+						<img id="Gangplank" onclick="select('Gangplank')" src="static/campeones/47.png"
+							style="width: 50px" class="azul">
+						<img id="Poppy" onclick="select('Poppy')" src="static/campeones/49.png" style="width: 50px"
+							class="azul">
+						<img id="Vi" onclick="select('Vi')" src="static/campeones/54.png" style="width: 50px"
+							class="azul">
+					</div>
+					<div>COSTE 4</div>
+					<div style="margin: 10px 0">
+						<img id="AurelionSol" onclick="select('AurelionSol')" src="static/campeones/1.png"
+							style="width: 50px" class="morado">
+						<img id="Chogath" onclick="select('Chogath')" src="static/campeones/2.png" style="width: 50px"
+							class="morado">
+						<img id="Draven" onclick="select('Draven')" src="static/campeones/3.png" style="width: 50px"
+							class="morado">
+						<img id="Gnar" onclick="select('Gnar')" src="static/campeones/4.png" style="width: 50px"
+							class="morado">
+						<img id="Sejuani" onclick="select('Sejuani')" src="static/campeones/5.png" style="width: 50px"
+							class="morado">
+						<img id="Akali" onclick="select('Akali')" src="static/campeones/7.png" style="width: 50px"
+							class="morado">
+						<img id="Brand" onclick="select('Brand')" src="static/campeones/9.png" style="width: 50px"
+							class="morado">
+						<img id="Leona" onclick="select('Leona')" src="static/campeones/10.png" style="width: 50px"
+							class="morado">
+						<img id="Kindred" onclick="select('Kindred')" src="static/campeones/26.png" style="width: 50px"
+							class="morado">
+						<img id="Jinx" onclick="select('Jinx')" src="static/campeones/55.png" style="width: 50px"
+							class="morado">
+					</div>
+					<div>COSTE 5</div>
+					<div style="margin: 10px 0">
+						<img id="Swain" onclick="select('Swain')" src="static/campeones/6.png" style="width: 50px"
+							class="dorado">
+						<img id="Anivia" onclick="select('Anivia')" src="static/campeones/8.png" style="width: 50px"
+							class="dorado">
+						<img id="MissFortune" onclick="select('MissFortune')" src="static/campeones/11.png"
+							style="width: 50px" class="dorado">
+						<img id="Karthus" onclick="select('Karthus')" src="static/campeones/21.png" style="width: 50px"
+							class="dorado">
+						<img id="Kayle" onclick="select('Kayle')" src="static/campeones/23.png" style="width: 50px"
+							class="dorado">
+						<img id="Yasuo" onclick="select('Yasuo')" src="static/campeones/14.png" style="width: 50px"
+							class="dorado">
+						<img id="Pantheon" onclick="select('Pantheon')" src="static/campeones/56.png"
+							style="width: 50px" class="dorado">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div style="width: 33%; margin-top:30px;">
+				<div style="width: 415px; margin-top:10px; margin-left:10px; text-align:center;"><img
+						src="static/originales/logoblanco.png" style="width:35%"></img></div>
+				<p1 align="bottom" style="margin-left: 120px; ">© 2019 www.tftesp.com<p1></p1>
+			</div>
+			<div style="width: 33%;">
+				<div style="text-align: center; margin-top: 45px;">
+					Teamfight Tactics ESP se creó según la política "Galimatías legal" de Riot Games usando
+					recursos que
+					son propiedad de Riot Games. Riot Games no respalda ni patrocina este proyecto.
+				</div>
+			</div>
+			<div style="width: 33%; text-align: center;">
+				<div style="margin-top:45px;">
+					<div style="align-items: center;display: flex;width: 30px; margin-left:155px;">
+						<div>
+							<a href="https://twitter.com/TFT_Esp" target="_blank">
+								<img src="static/originales/twitterblanco.png" style="width:55px;">
+							</a>
+						</div>
+						<div>
+							<a href="https://www.instagram.com/tftesp/" target="_blank">
+								<img src="static/originales/instagramblanco.png" style="width:80px;">
+							</a>
+						</div>
+					</div>
+					<div style="font-size: 10px;margin-top:10px; color:white;">
+						<u><a href="contactar.php" style="color:white!important;">Contacto</a></u> /
+						<u><a href="politica-de-privacidad.php" style="color:white!important;">Politica de
+								privacidad</a></u> /
+						<u><a href="terminos-y-condiciones.php" style="color:white!important;">Terminos y
+								condiciones</a></u>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
